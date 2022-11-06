@@ -1,6 +1,6 @@
 import './index.css'
 import './App.css';
-
+import { Header } from 'components/Header/Header';
 
 //-----------------------------------------------------------------------------------
 export function App() {
@@ -17,7 +17,7 @@ export function App() {
 
   return (
    <div className='container' >
-
+<Header/>
    </div>
   );
 }
