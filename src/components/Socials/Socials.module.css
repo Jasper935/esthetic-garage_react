@@ -1,0 +1,55 @@
+.socials{
+    display: flex;
+    width: 50px;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    color: rgb(236, 206, 206);
+    z-index: 200;
+    background-color: transparent;
+    /* letter-spacing: 0.15em; */
+}
+.tel{
+    width: 250px;
+    margin-bottom: 200px;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    font-weight: 500;
+}
+.tel:hover{
+    
+    color: rgb(227, 211, 36);
+}
+.list{
+    
+    
+}
+.item{
+    margin-bottom: 75px;
+}
+.item:last-child{
+    margin-bottom: 175px;
+}
+.link:hover{
+transform: scale(1.1);
+}
+
+.icon{
+    /* fill: white; */
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s linear;
+}
+.icon:hover{
+    fill: black;
+    transition: all 0.2s linear;
+    transform: scale(1.2);
+    }

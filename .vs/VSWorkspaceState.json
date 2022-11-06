@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\ContactsItem",
+    "\\src\\components\\ContactsList",
+    "\\src\\components\\Filter",
+    "\\src\\components\\Form",
+    "\\src\\redux",
+    "\\src\\redux\\contacts"
+  ],
+  "SelectedNode": "\\src\\redux\\contacts\\contacts-operations.js",
+  "PreviewInSolutionExplorer": false
+}
