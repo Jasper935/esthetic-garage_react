@@ -1,6 +1,7 @@
 import './index.css'
 import './App.css';
 import { Header } from 'components/Header/Header';
+import { Hero } from 'components/Hero/Hero';
 
 //-----------------------------------------------------------------------------------
 export function App() {
@@ -16,8 +17,9 @@ export function App() {
   // }, [yOffset]);
 
   return (
-   <div className='container' >
+   <div className='backdrop' >
 <Header/>
+<Hero/>
    </div>
   );
 }

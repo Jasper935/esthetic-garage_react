@@ -3,10 +3,10 @@ import logo from '../../images/logo2.png';
 import svg from '../../images/symbol-defs.svg';
 export const Header = () => {
   const socials = [
-    { id: 1, icon: `${svg}#icon-telegram`, link: 'instagram.com' },
-    { id: 2, icon: `${svg}#icon-instagram`, link: 'instagram.com' },
-    { id: 2, icon: `${svg}#icon-facebook`, link: 'instagram.com' },
-    { id: 2, icon: `${svg}#icon-instagram`, link: 'instagram.com' },
+    { id: 1, icon: `${svg}#icon-facebook`, link: 'https://www.facebook.com/esthetic.detaling' },
+    { id: 2, icon: `${svg}#icon-instagram`, link: 'https://instagram.com/esthetic.garage' },
+    { id: 2, icon: `${svg}#icon-tiktok`, link: 'https://www.tiktok.com/@esthetic_garage' },
+    { id: 2, icon: `${svg}#icon-telegram`, link: 'instagram.com' },
   ];
   return (
     <header className={css.header}>

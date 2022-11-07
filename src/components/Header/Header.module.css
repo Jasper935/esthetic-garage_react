@@ -6,6 +6,7 @@
     box-shadow: 0 0 10px 0 #a36262;
     border-radius: 0 0 10px 10px;
     background-color: transparent;
+    backdrop-filter: blur(15px);
 }
 .wrap{
    width: 1000px; 
@@ -27,6 +28,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+    border: none;
 }
 .burger{
     fill: white;
@@ -42,7 +44,7 @@
 }
 
 .socialsItem{
-    margin-right: 25px;
+    margin-right: 50px;
 }
 .socialsLink{
 
