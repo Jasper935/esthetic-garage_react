@@ -5,11 +5,11 @@
     height: 50px;
     box-shadow: 0 0 10px 0 #a36262;
     border-radius: 0 0 10px 10px;
-    background-color: transparent;
-    backdrop-filter: blur(15px);
+    background-color: black;
+    backdrop-filter: blur(30px);
 }
 .wrap{
-   width: 1000px; 
+   width: 1100px; 
    margin-left: auto;
    margin-right: auto;
    display: flex;
