@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import css from './Hero.module.css';
 import video from '../../video/IMG_0156.mp4';
-
+import logo from '../../images/logo2.png';
 export const Hero = () => {
   const vidRef = useRef(null);
 
@@ -15,6 +15,7 @@ export const Hero = () => {
 
   return (
     <div className={css.hero}>
+      
       <video
         src={video}
         ref={vidRef}
@@ -26,6 +27,8 @@ export const Hero = () => {
         loop
       />
       <div className={css.heroWrap}>
+      <img className={css.logo} src={logo} alt="logo" />
+      <div></div>
         <div className={css.leftSide}>
           <h4 style={{ color: 'white' }}>
             {' '}
