@@ -1,14 +1,17 @@
 .hero{
     position: relative;
-margin-top: 50px;
+/* margin-top: 50px; */
+/* margin-bottom: -50px; */
     width: 99vw;
     height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-/* height: 100vh; */
-width: 100vw;
+height: 100vh;
+/* width: 100vw; */
 overflow: hidden;
+background-color: black;
+background-attachment: fixed;
 }
 .video{
     position: absolute;
@@ -21,10 +24,11 @@ overflow: hidden;
     z-index: 1;
    
    
-   opacity: 0.3;
+   opacity: 0.5;
    /* box-shadow: inset 0px 0px 155px 0px rgba(0,0,0,0.75); */
 }
 .heroWrap{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -34,11 +38,13 @@ overflow: hidden;
     /* background-color: antiquewhite; */
 }
 .leftSide{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
+    right: 50%;
     background-color: black;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.7);
