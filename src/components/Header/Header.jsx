@@ -10,7 +10,10 @@ export const Header = () => {
   ];
   return (
     <header className={css.header}>
+      
       <div className={css.wrap}>
+        
+        <img className={css.logo} src={logo} alt="" />
         <ul className={css.socialsList}>
             {/* <div className={css.sociaBackground}></div> */}
           {socials.map(({ id, icon, link }) => {
@@ -25,7 +28,6 @@ export const Header = () => {
             );
           })}
         </ul>
-        <img className={css.logo} src={logo} alt="" />
         <button class={css.burgerBtn}>
           <svg className={css.burger}>
             <use href={`${svg}#icon-menu`} />
