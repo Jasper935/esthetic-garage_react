@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import css from './Hero.module.css';
 import video from '../../video/IMG_0156.mp4';
 import logo from '../../images/logo2.png';
+import { motion } from 'framer-motion';
 export const Hero = () => {
   const vidRef = useRef(null);
 
@@ -13,9 +14,15 @@ export const Hero = () => {
     handlePlayVideo();
   }, []);
 
+  const leftSideContent = [
+    { id: 1, title: 'DETALING', text: 'asdasdas' },
+    { id: 2, title: 'DETALING', text: 'asdasdas' },
+    { id: 3, title: 'DETALING', text: 'asdasdas' },
+    { id: 4, title: 'DETALING', text: 'asdasdas' },
+  ];
+
   return (
     <div className={css.hero}>
-      
       <video
         src={video}
         ref={vidRef}
@@ -27,13 +34,24 @@ export const Hero = () => {
         loop
       />
       <div className={css.heroWrap}>
-      <img className={css.logo} src={logo} alt="logo" />
-      <div></div>
+        <img className={css.logo} src={logo} alt="logo" />
+        <div></div>
         <div className={css.leftSide}>
-          <h4 style={{ color: 'white' }}>
-            {' '}
-            iasjdnfgiasnjdgiojnsdginsijdnfgisjdnf
-          </h4>
+          <div className={css.leftSideContent}>
+        <ul className={css.leftSideList}>
+          {leftSideContent.map(({id, title})=>{
+            return (
+              <motion.li className={css.leftSideItem} key={id}>
+                <h3 className={css.leftSideTitle} >{title}</h3>
+              </motion.li>
+            )
+
+          })}
+        </ul>
+
+
+            
+          </div>
         </div>
       </div>
     </div>
