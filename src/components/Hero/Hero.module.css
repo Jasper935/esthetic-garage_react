@@ -13,6 +13,21 @@
   background-color: black;
   background-attachment: fixed;
 }
+.pauseBtn {
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  z-index: 101;
+  border: none;
+  background-color: transparent;
+}
+.pauseIcon {
+  fill: white;
+  width: 35px;
+  height: 35px;
+}
 .video {
   position: absolute;
   top: 0;
@@ -69,17 +84,15 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
   /* border-radius: 0 15px 15px 0; */
-  
 }
 .leftSideContent {
   width: 500px;
- position: relative;
+  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 50;
-  
 }
 .leftSideList {
   display: flex;
@@ -87,88 +100,122 @@
   align-items: center;
 }
 .leftSideItem {
-  /* padding: 10px;  */
-  border-bottom: 2px solid rgb(0, 0, 0);
+  position: relative;
+  padding-left: 20px;
+  width: 425px;
+  /* border-bottom: 3px solid rgb(252, 4, 4); */
+
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
 }
-.leftSideItem:hover{
-    /* padding: 10px;  */
-    border-bottom: 2px solid rgb(252, 4, 4);
-  }
+.leftSideItem:hover {
+  /* padding: 10px;  */
+  transform: scale(1.1);
+  /* border-bottom: 3px solid rgb(252, 4, 4); */
+  border-left: none;
+}
+.arrowIcon {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%) rotate(180deg);
+  width: 35px;
+  height: 35px;
+  fill: #c4be97;
+  transition: all 0.3s ease-in-out;
+}
+.leftSideItem:hover .arrowIcon {
+  fill: rgb(199, 37, 37);
+  transform: translateX(430px) translateY(-50%) rotate(90deg) scale(1.2);
+  transition: all 0.3s ease-in-out;
+animation-name:hiddenText ;
+   /* animation-delay: 0.5s;  */
+   animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 .leftSideTitle {
   color: white;
-  font-size: 80px;
+  font-size: 45px;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
+  line-height: 0.9;
+  /* text-align: right; */
 }
 .leftSideTitle:hover {
   cursor: pointer;
-  transform: scale(1.1);
+
   opacity: 1;
 }
 .leftSideHiddenContent {
-   position: absolute;
-   top: 0;
-   right: -12px;
-   height: 100%;
-   width: 550px; 
-   background-color: #302f2f;
-   z-index: -1;
-   transition: all 0.3s ease-in-out;
-   border-radius: 0 15px 15px 0;
+  position: absolute;
+  top: 0;
+  right: -12px;
+  height: 100%;
+  width: 550px;
+  background-color: #302f2f;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 15px 15px 0;
 
-   padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.leftSideHiddenContent_active{
-    
+.leftSideHiddenContent_active {
+  position: absolute;
+  top: 0;
+  right: -700px;
+  height: 100%;
+  width: 700px;
+  /* background-color: rgba(180, 0, 45, 0.6); */
+  background-color: rgba(116, 46, 64, 0.7);
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0 15px 15px 0;
 
-    position: absolute;
-    top: 0;
-    right: -700px;
-    height: 100%;
-    width: 700px; 
-    /* background-color: rgba(180, 0, 45, 0.6); */
-    background-color: rgba(116, 46, 64, 0.7);
-    z-index: -1;
-    transition: all 0.4s ease-in-out;
-    border-radius: 0 15px 15px 0;
-
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hiddenContentText{
-    padding:  100px;
-    color: red; 
-    font-size: 20px;
-    z-index: 3;
-    font-weight: 800;
-    opacity: 0;
-    /* transition: all 2s ease-in-out; */
+.hiddenContentText {
+  padding: 100px;
+  color: white;
+  font-size: 20px;
+  z-index: 3;
+  font-weight: 800;
+  opacity: 0;
+  transform: scale(0);
+  /* transition: all 2s ease-in-out; */
 }
-.hiddenContentText_active{
-    padding:  100px;
-    color: white;
-    font-size: 20px;
-    z-index: 3;
-    font-weight: 800;
-    animation-name:hiddenText ;
-    animation-duration: 1.2s;
+.hiddenContentText_active {
+  padding: 100px;
+  color: white;
+  font-size: 20px;
+  z-index: 3;
+  font-weight: 800;
+  /* animation-name:hiddenText ; */
+  /* animation-delay: 0.5s; */
+  /* animation-duration: 1.5s;
     animation-iteration-count: 1;
-    
-    /* transition: all 0.3s ease-in-out; */
-
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     */
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
-
 
 @keyframes hiddenText {
-    0%{
-        opacity: 0;
-    }
-    
-    100%{opacity: 1;}
-
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
