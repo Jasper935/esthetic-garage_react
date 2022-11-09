@@ -3,7 +3,9 @@ import css from './Hero.module.css';
 import video from '../../video/IMG_0156.mp4';
 import logo from '../../images/logo2.png';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 export const Hero = () => {
+  const [logoUp, setLogoUp] = useState(false);
   const vidRef = useRef(null);
 
   const handlePlayVideo = () => {
@@ -34,23 +36,24 @@ export const Hero = () => {
         loop
       />
       <div className={css.heroWrap}>
-        <img className={css.logo} src={logo} alt="logo" />
-        <div></div>
+        <img className={logoUp?css.logoUp:css.logo} src={logo} alt="logo" />
+        
         <div className={css.leftSide}>
           <div className={css.leftSideContent}>
-        <ul className={css.leftSideList}>
-          {leftSideContent.map(({id, title})=>{
-            return (
-              <motion.li className={css.leftSideItem} key={id}>
-                <h3 className={css.leftSideTitle} >{title}</h3>
-              </motion.li>
-            )
-
-          })}
-        </ul>
-
-
-            
+            <ul className={css.leftSideList}>
+              {leftSideContent.map(({ id, title }) => {
+                return (
+                  <motion.li
+                    onMouseEnter={() => setLogoUp(true)}
+                    onMouseLeave={() => setLogoUp(false)}
+                    className={css.leftSideItem}
+                    key={id}
+                  >
+                    <h3 className={css.leftSideTitle}>{title}</h3>
+                  </motion.li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>

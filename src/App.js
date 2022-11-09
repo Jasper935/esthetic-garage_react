@@ -21,17 +21,17 @@ export function App() {
 
   // useEffect(() => {
   //   window.addEventListener('scroll', onScroll)
-    
+
   //   return () => (window.removeEventListener('scroll', onScroll))
-    
+
   // }, [yOffset]);
   // onWheel={onScroll}
   return (
-   <div    className='backdrop' >
-<Header/>
-<Hero/>
-<Hero/>
-   </div>
+    <div className='backdrop' >
+      <Header />
+      <Hero />
+      <Hero />
+    </div>
   );
 }
 
