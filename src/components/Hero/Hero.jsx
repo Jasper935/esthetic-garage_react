@@ -44,7 +44,7 @@ export const Hero = () => {
               {leftSideContent.map(({ id, title }) => {
                 return (
                   <motion.li
-                    onMouseEnter={() => setLogoUp(true)}
+                    onMouseEnter={() => {setLogoUp(true)}}
                     onMouseLeave={() => setLogoUp(false)}
                     className={css.leftSideItem}
                     key={id}
@@ -54,6 +54,9 @@ export const Hero = () => {
                 );
               })}
             </ul>
+             <div className={logoUp?css.leftSideHiddenContent_active: css.leftSideHiddenContent}>
+              <p className={css.hiddenContentText}>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+             </div>
           </div>
         </div>
       </div>
