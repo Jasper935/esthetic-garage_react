@@ -67,7 +67,7 @@
   top: 85px;
   background-color: black;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.8);
   /* border-radius: 0 15px 15px 0; */
   
 }
@@ -110,8 +110,8 @@
    top: 0;
    right: -12px;
    height: 100%;
-   width: 700px; 
-   background-color: rgba(175, 0, 43, 1);
+   width: 550px; 
+   background-color: #302f2f;
    z-index: -1;
    transition: all 0.3s ease-in-out;
    border-radius: 0 15px 15px 0;
@@ -129,7 +129,8 @@
     right: -700px;
     height: 100%;
     width: 700px; 
-    background-color: rgba(180, 0, 45, 0.6);
+    /* background-color: rgba(180, 0, 45, 0.6); */
+    background-color: rgba(116, 46, 64, 0.7);
     z-index: -1;
     transition: all 0.4s ease-in-out;
     border-radius: 0 15px 15px 0;
