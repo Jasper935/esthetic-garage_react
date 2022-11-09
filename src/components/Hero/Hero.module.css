@@ -68,7 +68,7 @@
   background-color: black;
   z-index: 10;
   background-color: rgba(0, 0, 0, 1);
-  border-radius: 0 15px 15px 0;
+  /* border-radius: 0 15px 15px 0; */
   
 }
 .leftSideContent {
@@ -88,8 +88,12 @@
 }
 .leftSideItem {
   /* padding: 10px;  */
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
+.leftSideItem:hover{
+    /* padding: 10px;  */
+    border-bottom: 2px solid rgb(252, 4, 4);
+  }
 .leftSideTitle {
   color: white;
   font-size: 80px;
@@ -104,10 +108,10 @@
 .leftSideHiddenContent {
    position: absolute;
    top: 0;
-   right: -10px;
+   right: -12px;
    height: 100%;
    width: 700px; 
-   background-color: rgba(0, 0, 0, 0.8);
+   background-color: rgba(175, 0, 43, 1);
    z-index: -1;
    transition: all 0.3s ease-in-out;
    border-radius: 0 15px 15px 0;
@@ -122,10 +126,10 @@
 
     position: absolute;
     top: 0;
-    right: -685px;
+    right: -700px;
     height: 100%;
     width: 700px; 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(180, 0, 45, 0.6);
     z-index: -1;
     transition: all 0.4s ease-in-out;
     border-radius: 0 15px 15px 0;
@@ -137,7 +141,7 @@
 }
 .hiddenContentText{
     padding:  100px;
-    color: red;
+    color: red; 
     font-size: 20px;
     z-index: 3;
     font-weight: 800;
@@ -146,7 +150,7 @@
 }
 .hiddenContentText_active{
     padding:  100px;
-    color: #ce0233;
+    color: white;
     font-size: 20px;
     z-index: 3;
     font-weight: 800;
