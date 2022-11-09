@@ -4,7 +4,7 @@ import { Header } from 'components/Header/Header';
 import { Hero } from 'components/Hero/Hero';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
 //-----------------------------------------------------------------------------------
 export function App() {
