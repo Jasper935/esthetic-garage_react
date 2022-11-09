@@ -55,7 +55,7 @@ export const Hero = () => {
               })}
             </ul>
              <div className={logoUp?css.leftSideHiddenContent_active: css.leftSideHiddenContent}>
-              <p className={css.hiddenContentText}>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+              <p className={logoUp?css.hiddenContentText_active:css.hiddenContentText}>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
              </div>
           </div>
         </div>
