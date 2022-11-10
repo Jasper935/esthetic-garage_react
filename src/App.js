@@ -2,6 +2,7 @@ import './index.css'
 import './App.css';
 import { Header } from 'components/Header/Header';
 import { Hero } from 'components/Hero/Hero';
+import { Works } from 'components/Works/Works';
 import { useEffect } from 'react';
 import { useState } from 'react';
 // import { useRef } from 'react';
@@ -31,6 +32,7 @@ export function App() {
       <Header />
       <Hero />
       <Hero />
+      <Works/>
     </div>
   );
 }

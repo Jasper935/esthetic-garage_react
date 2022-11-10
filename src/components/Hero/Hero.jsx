@@ -8,12 +8,10 @@ import { useState } from 'react';
 
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
-  
-  const vidRef = useRef(null);
+  const [activeText, setActiveText] = useState(0);
 
-  
-  
- 
+  const vidRef = useRef(null);
+  const textArr = ['text1', 'text2', 'text3', 'text4'];
 
   useEffect(() => {
     vidRef.current.play();
@@ -28,7 +26,6 @@ export const Hero = () => {
 
   return (
     <div className={css.hero}>
-      
       <video
         src={video}
         ref={vidRef}
@@ -55,8 +52,12 @@ export const Hero = () => {
                   <motion.li
                     onMouseEnter={() => {
                       setLogoUp(true);
+                      setActiveText(id);
                     }}
-                    onMouseLeave={() => setLogoUp(false)}
+                    onMouseLeave={() => {
+                      setLogoUp(false);
+                      setActiveText(0);
+                    }}
                     className={css.leftSideItem}
                     key={id}
                   >
@@ -80,9 +81,7 @@ export const Hero = () => {
                   logoUp ? css.hiddenContentText_active : css.hiddenContentText
                 }
               >
-                Some text Some text Some text Some text Some text Some text Some
-                text Some text Some text Some text Some text Some text Some text
-                Some text
+                {activeText&&textArr[activeText-1]}
               </p>
             </div>
           </div>
