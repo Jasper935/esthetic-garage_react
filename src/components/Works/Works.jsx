@@ -43,12 +43,14 @@ export const Works = () => {
           autoplay={{
             delay: 2500,
             disableOnInteraction: true,
+            
           }}
           pagination={{
             clickable: true,
           }}
           navigation={true}
           modules={[Autoplay, Pagination]}
+          loop
         >
          
           {worksPhotos.map((el, i) => {
