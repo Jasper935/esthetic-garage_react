@@ -61,6 +61,7 @@
   transform: translateY(-50%);
   z-index: 50;
   transition: all 0.4s ease-out;
+  transition-delay: 150ms;
 }
 .logoUp {
   position: absolute;
@@ -70,6 +71,7 @@
   transform: translateY(-50%) scale(0.5);
   z-index: 50;
   transition: all 0.4s ease-out;
+  transition-delay: 150ms;
 }
 .leftSide {
   position: absolute;
@@ -80,9 +82,9 @@
   height: 85%;
   right: 58%;
   top: 85px;
-  background-color: black;
+  
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.8);
+  
   background-color: rgba(161, 141, 146, 0.7);
   /* border-radius: 0 15px 15px 0; */
 }
@@ -99,6 +101,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .leftSideItem {
   position: relative;
@@ -124,7 +128,13 @@
   fill: #c4be97;
   transition: all 0.3s ease-in-out;
 }
-.leftSideItem:hover .arrowIcon {
+.arrowIconActive {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  
+  width: 35px;
+  height: 35px;
   fill: rgb(199, 37, 37);
   transform: translateX(445px) translateY(-50%) rotate(90deg) scale(1.2);
   transition: all 0.4s ease-in-out;
@@ -155,8 +165,8 @@
   background-color: rgb(60, 50, 50);
   z-index: -1;
   transition: all 0.3s ease-in-out;
-  border-radius: 0 15px 15px 0;
-
+  border-radius: 0 30px 30px 0;
+  transition-delay: 150ms;
   padding: 50px;
   display: flex;
   align-items: center;
@@ -172,21 +182,23 @@
   background-color: rgba(41, 39, 39, 1);
   z-index: -1;
   transition: all 0.4s ease-in-out;
-  border-radius: 0 15px 15px 0;
+  transition-delay: 150ms;
+  border-radius: 0 30px 30px 0;
 
   padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hiddenContentText {
   padding: 100px;
   color: white;
   font-size: 20px;
-  z-index: 3;
+  z-index: -1;
   font-weight: 800;
   opacity: 0;
-  transform: scale(0);
+  /* transform: scale(0); */
   /* transition: all 2s ease-in-out; */
 }
 .hiddenContentText_active {
@@ -195,15 +207,10 @@
   font-size: 20px;
   z-index: 3;
   font-weight: 800;
-  /* animation-name:hiddenText ; */
-  /* animation-delay: 0.5s; */
-  /* animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-     */
-  transform: scale(1);
+ 
+  
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  
 }
 
 @keyframes hiddenText {

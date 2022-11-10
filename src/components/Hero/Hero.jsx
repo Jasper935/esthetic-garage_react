@@ -40,10 +40,12 @@ export const Hero = () => {
         <img className={logoUp ? css.logoUp : css.logo} src={logo} alt="logo" />
 
         <motion.div
+        className={css.leftSide}
           initial={{ x: '-100%' }}
           animate={{ x: '0' }}
           transition={{ delay: 0.2, duration: 1 }}
-          className={css.leftSide}
+          style={!logoUp&&{borderRadius: ' 0 30px 30px 0'}}
+          
         >
           <div className={css.leftSideContent}>
             <ul className={css.leftSideList}>
@@ -61,7 +63,7 @@ export const Hero = () => {
                     className={css.leftSideItem}
                     key={id}
                   >
-                    <svg className={css.arrowIcon}>
+                    <svg className={activeText===id?css.arrowIconActive:css.arrowIcon}>
                       <use href={`${svg}#icon-arrow`} />
                     </svg>
                     <h3 className={css.leftSideTitle}>{title}</h3>
@@ -75,14 +77,26 @@ export const Hero = () => {
                   ? css.leftSideHiddenContent_active
                   : css.leftSideHiddenContent
               }
+              onMouseEnter={() => {
+                setLogoUp(true);
+                setActiveText(activeText);
+              }}
+              onMouseLeave={() => {
+                setLogoUp(false);
+                setActiveText(0);
+              }}
             >
-              <p
+              <motion.p
+                key={activeText}
                 className={
-                  logoUp ? css.hiddenContentText_active : css.hiddenContentText
+                  activeText ? css.hiddenContentText_active : css.hiddenContentText
                 }
+                initial={{ x: '-100%', opacity:0 }}
+                animate={{ x: '0', opacity:activeText?1:0 }}
+                transition={{  duration: 0.6 }}
               >
-                {activeText&&textArr[activeText-1]}
-              </p>
+                {activeText && textArr[activeText - 1]}
+              </motion.p>
             </div>
           </div>
         </motion.div>
