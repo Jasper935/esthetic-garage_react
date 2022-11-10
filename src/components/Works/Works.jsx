@@ -1,5 +1,5 @@
 import css from './Works.module.css';
-import {useSwiper, Swiper, SwiperSlide  } from 'swiper/react';
+import { Swiper, SwiperSlide  } from 'swiper/react';
 import { worksPhotos } from 'worksList';
 import svg from '../../images/symbol-defs.svg';
 import 'swiper/css';
@@ -11,10 +11,10 @@ import { Autoplay, Pagination } from 'swiper';
 import { useRef } from 'react';
 // import { useState } from 'react';
 export const Works = () => {
-  // const [thumbsSwiper, setThumbsSwiper] = useState({})
+  
   const swiperRef = useRef();
   
-  console.log(useSwiper());
+  
   return (
     <section className={css.works}>
       <h2 className={css.worksTitle}>Наші роботи</h2>
@@ -35,7 +35,7 @@ export const Works = () => {
             swiperRef.current = swiper;
           }}
           style={{
-            '--swiper-navigation-color': '#fff',
+            
             '--swiper-pagination-color': '#fff',
           }}
           spaceBetween={100}

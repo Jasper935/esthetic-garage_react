@@ -1,0 +1,25 @@
+.socialsList{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    z-index: 25;
+}
+
+.socialsItem{
+    margin-right: 50px;
+}
+.socialsItem:last-child{
+    margin-right: 0;
+}
+.socialsLink{
+
+}
+.socialsIcon{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    
+    z-index: 100;
+    /* fill: red; */
+}
