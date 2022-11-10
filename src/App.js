@@ -5,6 +5,7 @@ import { Hero } from 'components/Hero/Hero';
 import { Works } from 'components/Works/Works';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Services } from 'components/Services/Services';
 // import { useRef } from 'react';
 
 //-----------------------------------------------------------------------------------
@@ -26,13 +27,15 @@ export function App() {
     return () => (window.removeEventListener('scroll', onScroll))
 
   }, [yOffset]);
-  
+
   return (
     <div className='backdrop' >
       <Header />
-      
+
       <Hero />
-      <Works/>
+
+      <Works />
+      <Services />
     </div>
   );
 }

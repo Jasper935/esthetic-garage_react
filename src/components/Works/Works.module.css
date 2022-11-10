@@ -3,7 +3,8 @@
     width: 1200px;
    
     padding: 100px;
-
+padding-bottom: 0;
+margin-bottom: -250px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -11,13 +12,12 @@
     
 }
 .works::after{
-    content: '';
+    /* content: ''; */
     position: absolute;
     bottom: 0;
     width: 99vw;
     height: 22vh;
     border-top: 1px solid rgb(190 190 190);
-    /* background-image: linear-gradient(to bottom, black, #801018 100%); */
     background-color: #000000;
     z-index: 1;
 }
