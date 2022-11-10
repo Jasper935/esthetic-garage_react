@@ -30,7 +30,7 @@ export function App() {
   return (
     <div className='backdrop' >
       <Header />
-      <Hero />
+      
       <Hero />
       <Works/>
     </div>

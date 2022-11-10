@@ -24,11 +24,12 @@ export const Works = () => {
           "--swiper-button-next-color":'#fff',
           
         }}
-        spaceBetween={30}
+        spaceBetween={100}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
+          
         }}
         pagination={{
           clickable: true,
