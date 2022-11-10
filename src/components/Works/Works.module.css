@@ -87,7 +87,7 @@
     position: absolute;
     top: 45%;
     left: -70px;
-    color: rgb(255, 255, 255);
+    color: #d38383;
     background-color: transparent;
     z-index: 25;
     cursor: pointer;
@@ -103,7 +103,7 @@ rotate: -90deg;
     position: absolute;
     top: 45%;
     right: -95px;
-    color: rgb(255, 255, 255);
+    color: #d38383;
     background-color: transparent;
     z-index: 25;
     border: none;
