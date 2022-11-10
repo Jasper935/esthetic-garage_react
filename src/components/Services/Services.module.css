@@ -39,4 +39,12 @@
   background-color: rgb(37, 36, 33);
   border-radius: 15px;
   margin-top: 25px;
+  display: flex;
+  
+}
+.ItemVisibleTitle{
+    font-size: 35px;
+    color: white;
+    /* height: 100%; */
+
 }
