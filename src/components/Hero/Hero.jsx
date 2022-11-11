@@ -98,7 +98,7 @@ export const Hero = () => {
               </motion.p>
             </div>
           </div>
-          <a className={css.telLink} href="">
+          <a className={css.telLink} href="tel:+380937582512">
           <svg
               className={
                 css.telIcon
