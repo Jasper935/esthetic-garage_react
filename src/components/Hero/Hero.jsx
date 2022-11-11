@@ -9,6 +9,7 @@ import { useState } from 'react';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
+  const [isVideoPlay, setIsVideoPlay] = useState(true);
 
   const vidRef = useRef(null);
   const textArr = ['text1', 'text2', 'text3', 'text4'];
@@ -111,6 +112,13 @@ export const Hero = () => {
               </svg>
               м. Луцьк  вул. Карпенка-Карого 3
             </a>
+          </div>
+          <div className={css.videoSwitcher} onClick={()=>setIsVideoPlay(!isVideoPlay)}>
+                <p className={css.videoText}>відео</p>
+                <div className={css.videoBtn}>
+                  <div className={css.videoBtnPoint}></div>
+                </div>
+
           </div>
         </motion.div>
       </div>

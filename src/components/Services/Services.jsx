@@ -5,10 +5,13 @@ export const Services = () => {
   const [activeElem, SetActiveElem] = useState(0);
 
   const ServicesList = [
-    { id: 1, title: 'Полірування' },
-    { id: 2, title: 'Detaling' },
-    { id: 3, title: 'Захисна плівка' },
-    { id: 4, title: 'Detaling' },
+    { id: 1, title: 'Хімчистка' },
+    { id: 2, title: 'Полірування авто' },
+    { id: 3, title: 'Захист нанокерамікою' },
+    { id: 4, title: 'Detailing мийка' },
+    { id: 5, title: 'Оклейка антигравійною плівкою' },
+    { id: 6, title: 'Передпродажна підготовка' },
+    { id: 7, title: 'Оклейка антигравійною плівкою' },
   ];
 
   const onClick = id => {
