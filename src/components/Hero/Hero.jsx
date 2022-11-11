@@ -98,17 +98,20 @@ export const Hero = () => {
               </motion.p>
             </div>
           </div>
-          <a className={css.telLink} href="tel:+380937582512">
-          <svg
-              className={
-                css.telIcon
-              }
-            >
-              <use href={`${svg}#icon-tel`} />
-            </svg>
-            +38(093)758-25-12
-            {' '}
-          </a>
+          <div className={css.contacts}>
+            <a className={css.telLink} href="tel:+380937582512">
+              <svg className={css.telIcon}>
+                <use href={`${svg}#icon-tel`} />
+              </svg>
+              +38(093)758-25-12
+            </a>
+            <a className={css.location} target={'_blank'} href="https://g.page/lavinamall?share" rel="noreferrer">
+              <svg className={css.locIcon}>
+                <use href={`${svg}#icon-location`} />
+              </svg>
+              м. Луцьк вул. Центральна 8
+            </a>
+          </div>
         </motion.div>
       </div>
     </div>

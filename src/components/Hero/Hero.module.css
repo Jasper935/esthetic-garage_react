@@ -46,8 +46,6 @@
   width: 1150px;
   height: 100%;
   z-index: 5;
-  /* background-color: antiquewhite; */
-  /* border-right: 1px solid black; */
 }
 .logo {
   position: absolute;
@@ -211,24 +209,32 @@ transition: all 0.4s linear;
   opacity: 1;
   
 }
+/* //------------------------------------------------------------------ */
+.contacts{
+  position: absolute;
+  bottom:15px;
+  right: -700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 75;
+}
 
 
 .telLink{
   font-family:  monospace;
-  font-size: 30px;
-  position: absolute;
-  bottom:15px;
-  right: -445px;
+  font-size: 20px;
+  
   padding: 5px 20px;
   color: white;
   font-weight: 700;
-  width: 400px;
-  /* background-color: rgba(60, 50, 50, 1); */
-  border-radius: 30px ;
+  /* width: 400px; */
+  
+ 
   text-align: center;
   display: flex;
   align-items: center;
-  z-index: 75;
+  
 }
 .telIcon{
   width: 30px;
@@ -237,6 +243,28 @@ transition: all 0.4s linear;
   margin-right: 10px;
   margin-left: 10px;
 }
+.location{
+  font-family:  monospace;
+  font-size: 20px;
+  
+  padding: 5px 20px;
+  color: white;
+  font-weight: 700;
+  width: 400px;
+  
+ 
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.locIcon{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 @keyframes hiddenText {
   0% {
     opacity: 0.1;
