@@ -105,11 +105,11 @@ export const Hero = () => {
               </svg>
               +38(093)758-25-12
             </a>
-            <a className={css.location} target={'_blank'} href="https://g.page/lavinamall?share" rel="noreferrer">
+            <a className={css.location} target='_blank' href="https://g.page/esthetic-garage?share" rel="noreferrer">
               <svg className={css.locIcon}>
                 <use href={`${svg}#icon-location`} />
               </svg>
-              м. Луцьк вул. Центральна 8
+              м. Луцьк  вул. Карпенка-Карого 3
             </a>
           </div>
         </motion.div>

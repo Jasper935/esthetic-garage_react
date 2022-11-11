@@ -213,7 +213,7 @@ transition: all 0.4s linear;
 .contacts{
   position: absolute;
   bottom:15px;
-  right: -700px;
+  right: -750px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -250,7 +250,7 @@ transition: all 0.4s linear;
   padding: 5px 20px;
   color: white;
   font-weight: 700;
-  width: 400px;
+  width: 450px;
   
  
   text-align: center;
