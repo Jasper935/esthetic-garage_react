@@ -29,10 +29,8 @@ export const Hero = () => {
       <video
         src={video}
         ref={vidRef}
-        // onClick={handlePlayVideo}
         type="video/mp4"
         className={css.video}
-        // autoPlay
         muted
         loop
       />
@@ -40,12 +38,11 @@ export const Hero = () => {
         <img className={logoUp ? css.logoUp : css.logo} src={logo} alt="logo" />
 
         <motion.div
-        className={css.leftSide}
+          className={css.leftSide}
           initial={{ x: '-100%' }}
           animate={{ x: '0' }}
           transition={{ delay: 0.2, duration: 1 }}
-          style={!logoUp&&{borderRadius: ' 0 30px 30px 0'}}
-          
+          style={!logoUp && { borderRadius: ' 0 30px 30px 0' }}
         >
           <div className={css.leftSideContent}>
             <ul className={css.leftSideList}>
@@ -63,7 +60,11 @@ export const Hero = () => {
                     className={css.leftSideItem}
                     key={id}
                   >
-                    <svg className={activeText===id?css.arrowIconActive:css.arrowIcon}>
+                    <svg
+                      className={
+                        activeText === id ? css.arrowIconActive : css.arrowIcon
+                      }
+                    >
                       <use href={`${svg}#icon-arrow`} />
                     </svg>
                     <h3 className={css.leftSideTitle}>{title}</h3>
@@ -72,11 +73,7 @@ export const Hero = () => {
               })}
             </ul>
             <div
-              className={
-                logoUp
-                  ? css.leftSideHiddenContent_active
-                  : css.leftSideHiddenContent
-              }
+              className={logoUp ? css.rightSide_active : css.rightSide}
               onMouseEnter={() => {
                 setLogoUp(true);
                 setActiveText(activeText);
@@ -89,16 +86,29 @@ export const Hero = () => {
               <motion.p
                 key={activeText}
                 className={
-                  activeText ? css.hiddenContentText_active : css.hiddenContentText
+                  activeText
+                    ? css.hiddenContentText_active
+                    : css.hiddenContentText
                 }
-                initial={{ x: '-100%', opacity:0 }}
-                animate={{ x: '0', opacity:activeText?1:0 }}
-                transition={{  duration: 0.6 }}
+                initial={{ x: '-100%', opacity: 0 }}
+                animate={{ x: '0', opacity: activeText ? 1 : 0 }}
+                transition={{ duration: 0.6 }}
               >
                 {activeText && textArr[activeText - 1]}
               </motion.p>
             </div>
           </div>
+          <a className={css.telLink} href="">
+          <svg
+              className={
+                css.telIcon
+              }
+            >
+              <use href={`${svg}#icon-tel`} />
+            </svg>
+            +38(093)758-25-12
+            {' '}
+          </a>
         </motion.div>
       </div>
     </div>

@@ -10,10 +10,10 @@ export const Services = () => {
     { id: 3, title: 'Захисна плівка' },
     { id: 4, title: 'Detaling' },
   ];
-  
-const onClick=(id)=>{
-id===activeElem?SetActiveElem(0):SetActiveElem(id)
-}
+
+  const onClick = id => {
+    id === activeElem ? SetActiveElem(0) : SetActiveElem(id);
+  };
 
   return (
     <section className={css.services}>
@@ -23,22 +23,31 @@ id===activeElem?SetActiveElem(0):SetActiveElem(id)
       <ul className={css.servicesLsit}>
         {ServicesList.map(({ title, id }) => {
           return (
-            <li className={css.servicesItem} onClick={() =>{ SetActiveElem(id)
-                onClick(id)}}>
-                
+            <li
+              className={css.servicesItem}
+              onClick={() => {
+                SetActiveElem(id);
+                onClick(id);
+              }}
+            >
               <div className={css.ItemVisible}>
                 <h4 className={css.ItemVisibleTitle}>{title}</h4>
+                <svg
+                  className={activeElem === id ? css.arrowIconOpen : css.arrowIcon}
+                >
+                  <use href={`${svg}#icon-arrow`} />
+                </svg>
               </div>
-              <svg  className={activeElem===id?css.arrowIconOpen:css.arrowIcon}>
-                <use href={`${svg}#icon-arrow`} />
-              </svg>
+              <div
+                className={
+                  activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
+                }
+              >
+                <div className={css.cardLeftSide}>dgxhdasfhdfhdfhd</div>
+              </div>
             </li>
           );
         })}
-
-        <li className={css.servicesItem}></li>
-        <li className={css.servicesItem}></li>
-        <li className={css.servicesItem}></li>
       </ul>
     </section>
   );
