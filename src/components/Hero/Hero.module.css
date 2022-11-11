@@ -34,7 +34,7 @@
   left: 0;
   width: 100%;
    z-index: 1;
-  opacity: 0.7;
+  opacity: 0.3;
   
 }
 
@@ -220,10 +220,10 @@ transition: all 0.4s linear;
   bottom:15px;
   right: -445px;
   padding: 5px 20px;
-  color: #a2a19e;
+  color: white;
   font-weight: 700;
   width: 400px;
-  background-color: rgba(60, 50, 50, 1);
+  /* background-color: rgba(60, 50, 50, 1); */
   border-radius: 30px ;
   text-align: center;
   display: flex;
@@ -233,7 +233,7 @@ transition: all 0.4s linear;
 .telIcon{
   width: 30px;
   height: 30px;
-  fill: #a2a19e;
+  fill: white;
   margin-right: 10px;
   margin-left: 10px;
 }
