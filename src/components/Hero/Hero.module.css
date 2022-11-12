@@ -33,6 +33,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-size: cover;
    z-index: 1;
   opacity: 0.3;
   
@@ -175,7 +176,7 @@
   top: 0;
   right: -700px;
   height: 100%;
-  width: 715px;
+  width: 700px;
   
   background-color: rgba(41, 39, 39, 1);
   z-index: -1;
@@ -214,7 +215,17 @@ transition: all 0.4s linear;
 .contacts{
   position: absolute;
   bottom:15px;
-  right: -750px;
+  right: -760px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 75;
+  
+}
+.contacts{
+  position: absolute;
+  bottom:15px;
+  right: -725px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,12 +233,11 @@ transition: all 0.4s linear;
   
 }
 
-
 .telLink{
   font-family:  monospace;
   font-size: 20px;
   
-  padding: 5px 20px;
+  padding: 5px 3px;
   color: white;
   font-weight: 700;
   /* width: 400px; */
