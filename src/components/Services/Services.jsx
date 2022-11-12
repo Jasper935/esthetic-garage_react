@@ -27,6 +27,7 @@ export const Services = () => {
         {ServicesList.map(({ title, id }) => {
           return (
             <li
+              key={id}
               className={css.servicesItem}
               onClick={() => {
                 SetActiveElem(id);
@@ -36,7 +37,9 @@ export const Services = () => {
               <div className={css.ItemVisible}>
                 <h4 className={css.ItemVisibleTitle}>{title}</h4>
                 <svg
-                  className={activeElem === id ? css.arrowIconOpen : css.arrowIcon}
+                  className={
+                    activeElem === id ? css.arrowIconOpen : css.arrowIcon
+                  }
                 >
                   <use href={`${svg}#icon-arrow`} />
                 </svg>

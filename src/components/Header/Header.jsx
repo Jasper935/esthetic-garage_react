@@ -8,7 +8,7 @@ export const Header = () => {
       <div className={css.wrap}>
         <img className={css.logo} src={logo} alt="" />
         <Socials iconStyles={{ color: '#d6c0c0'}}/>
-        <button class={css.burgerBtn}>
+        <button className={css.burgerBtn}>
           <svg className={css.burger}>
             <use href={`${svg}#icon-menu`} />
           </svg>

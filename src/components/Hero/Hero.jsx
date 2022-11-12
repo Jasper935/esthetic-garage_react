@@ -5,7 +5,7 @@ import logo from '../../images/logo2.png';
 import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-
+import bg from '../../images/bg9.JPG';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
@@ -15,8 +15,10 @@ export const Hero = () => {
   const textArr = ['text1', 'text2', 'text3', 'text4'];
 
   useEffect(() => {
-    vidRef.current.play();
-  }, []);
+    if (isVideoPlay) {
+      vidRef.current.play();
+    }
+  }, [isVideoPlay]);
 
   const leftSideContent = [
     { id: 1, title: 'Захист антигравійною плівкою', text: 'asdasdas' },
@@ -27,14 +29,18 @@ export const Hero = () => {
 
   return (
     <div className={css.hero}>
-      <video
-        src={video}
-        ref={vidRef}
-        type="video/mp4"
-        className={css.video}
-        muted
-        loop
-      />
+      {isVideoPlay ? (
+        <video
+          src={video}
+          ref={vidRef}
+          type="video/mp4"
+          className={css.video}
+          muted
+          loop
+        />
+      ) : (
+        <img src={bg} className={css.video} alt="car" />
+      )}
       <div className={css.heroWrap}>
         <img className={logoUp ? css.logoUp : css.logo} src={logo} alt="logo" />
 
@@ -106,19 +112,26 @@ export const Hero = () => {
               </svg>
               +38(093)758-25-12
             </a>
-            <a className={css.location} target='_blank' href="https://g.page/esthetic-garage?share" rel="noreferrer">
+            <a
+              className={css.location}
+              target="_blank"
+              href="https://g.page/esthetic-garage?share"
+              rel="noreferrer"
+            >
               <svg className={css.locIcon}>
                 <use href={`${svg}#icon-location`} />
               </svg>
-              м. Луцьк  вул. Карпенка-Карого 3
+              м. Луцьк вул. Карпенка-Карого 3
             </a>
           </div>
-          <div className={css.videoSwitcher} onClick={()=>setIsVideoPlay(!isVideoPlay)}>
-                <p className={css.videoText}>відео</p>
-                <div className={css.videoBtn}>
-                  <div className={css.videoBtnPoint}></div>
-                </div>
-
+          <div
+            className={css.videoSwitcher}
+            onClick={() => setIsVideoPlay(!isVideoPlay)}
+          >
+            <p className={css.videoText}>відео</p>
+            <div className={css.videoBtn}>
+              <div className={isVideoPlay?css.videoBtnPointRight: css.videoBtnPoint}></div>
+            </div>
           </div>
         </motion.div>
       </div>
