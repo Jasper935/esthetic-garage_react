@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Raleway;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -21,7 +22,7 @@ ol[class] {
 }
 
 /* Убираем внешние отступы */
-body,
+
 h1,
 h2,
 h3,
