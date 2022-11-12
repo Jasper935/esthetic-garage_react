@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import css from './Hero.module.css';
 import video from '../../video/video_last.mp4';
-import logo from '../../images/logo2.png';
+import logo from '../../images/logo3.png';
 import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
