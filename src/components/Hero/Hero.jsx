@@ -10,7 +10,7 @@ export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
-
+  const [messageActive, setMessageActive] = useState(false);
   const vidRef = useRef(null);
 
   useEffect(() => {
@@ -151,11 +151,11 @@ export const Hero = () => {
             </div>
           </div>
           <div className={css.contacts}>
-            <a className={css.telLink} href="tel:+380937582512">
+            <a className={css.telLink} href="tel:+380950147888">
               <svg className={css.telIcon}>
                 <use href={`${svg}#icon-tel`} />
               </svg>
-              +38(093)758-25-12
+              +38(095)014-78-88
             </a>
             <a
               className={css.location}
@@ -173,7 +173,7 @@ export const Hero = () => {
             className={css.videoSwitcher}
             onClick={() => setIsVideoPlay(!isVideoPlay)}
           >
-            <p className={css.videoText}>відео</p>
+            <p  className={css.videoText} onMouseEnter={()=>setMessageActive(true)} onMouseLeave={()=>setMessageActive(false)}>відео</p>
             <div className={css.videoBtn}>
               <div
                 className={
@@ -181,6 +181,7 @@ export const Hero = () => {
                 }
               ></div>
             </div>
+            <p style={{opacity:messageActive&&isVideoPlay? 1: 0}} className={css.message}>Якщо у вас повільний інтернет, ви можете скоритстатися версією сторінки без відео.</p>
           </div>
         </motion.div>
       </div>

@@ -292,6 +292,7 @@ align-items: center;
 .videoText{
   color: white;
   font-size: 14px;
+  cursor: pointer;
 }
 .videoBtn{
   width: 50px;
@@ -301,6 +302,7 @@ align-items: center;
   border: 2px solid white;
   position: relative;
   border-radius: 15px;
+  cursor: pointer;
 }
 .videoBtnPoint{
   position: absolute;
@@ -323,6 +325,20 @@ align-items: center;
   border-radius: 50%;
   background-color: rgb(208, 22, 22);
   transition: all 0.2s linear;
+}
+.message{
+  position: absolute;
+  top: 50%;
+  right: 55px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  padding: 15px;
+  width: 225px;
+  color: wheat;
+  border: 1px solid wheat;
+  border-radius: 15px;
+  background-color: rgba(41, 39, 39, 0.7);
+  text-align: center;
 }
 @keyframes hiddenText {
   0% {
