@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from 'components/Header/Header';
 import { Hero } from 'components/Hero/Hero';
 import { Works } from 'components/Works/Works';
-import { Modal } from 'components/Modal/Modal';
+// import { Modal } from 'components/Modal/Modal';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Services } from 'components/Services/Services';
