@@ -203,7 +203,7 @@ transition: all 0.4s linear;
   /* transition: all 2s ease-in-out; */
 }
 .hiddenContentText_active {
- 
+ padding-top: 65px;
   color: rgb(220, 223, 210);
   font-size: 17px;
   z-index: 3;
