@@ -1,40 +1,38 @@
-.modal{
-    position: fixed;
-    
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: rgba(122, 107, 107, 0.9);
-    z-index: 300;
-    /* background-image: url('../../images/logo2.png'); */
-    background-size: 300px;
-    scroll-behavior:smooth;
-    overflow: hidden;
-    display: flex;
-    justify-content: end;
-    
-    
+.modal {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(122, 107, 107, 0.9);
+  z-index: 300;
+  /* background-image: url('../../images/logo2.png'); */
+  background-size: 300px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
-.modalContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35vw;
-    height: 100vh;
-    background-color: rgb(40, 42, 44);
-    background-image: url('../../images/modalbg.JPG');
+.modalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 100vh;
+  background-color: rgb(40, 42, 44);
+  background-image: url('../../images/modalbg.JPG');
 }
-.window{
-width: 500px;
-height: 600px;
-/* background-color: rgb(40, 42, 44); */
+.window {
+  width: 500px;
+  height: 600px;
+  /* background-color: rgb(40, 42, 44); */
 }
-.modalLogo{
-    position: absolute;
-    top: 50%;
-    left: 32%;
-transform: translateY(-50%) translateX(-50%);
-    width: 750px;
-    height: 250px;
+.modalLogo {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 750px;
+  height: 250px;
 }
