@@ -43,7 +43,7 @@ export const Services = () => {
 
   return (
     <section className={css.services}>
-      <Header/>
+      <Header text="Роботи" location='/works' />
       <div className={css.titleWrap}>
         <h2 className={css.title}>Послуги</h2>
       </div>

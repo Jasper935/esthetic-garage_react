@@ -88,7 +88,7 @@ export const Hero = () => {
 
   return (
     <>
-    <Header/>
+    <Header text='Послуги' location={'/services'}/>
     <div className={css.hero}>
       {isVideoPlay ? (
         <video
