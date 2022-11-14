@@ -3,9 +3,13 @@ import svg from '../../images/symbol-defs.svg';
 import { useState } from 'react';
 import { createId } from 'data/createId';
 import { Header } from 'components/Header/Header';
+import { motion } from 'framer-motion';
+//--------------------------------------------------
 export const Services = () => {
   const [activeElem, SetActiveElem] = useState(0);
-
+  const inital ={opacity:0}
+const animate ={opacity:1}
+const transition ={duration:1}
   const ServicesList = [
     {
       id: 1,
@@ -42,8 +46,8 @@ export const Services = () => {
   };
 
   return (
-    <section className={css.services}>
-      <Header text="Роботи" location='/works' />
+    <motion.section  className={css.services} initial={inital} animate={animate} transition={transition}>
+      <Header text="Роботи" location='/works' activeId={2} />
       <div className={css.titleWrap}>
         <h2 className={css.title}>Послуги</h2>
       </div>
@@ -99,6 +103,6 @@ export const Services = () => {
           );
         })}
       </ul>
-    </section>
+    </motion.section>
   );
 };

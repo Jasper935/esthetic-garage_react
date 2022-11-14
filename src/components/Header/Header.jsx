@@ -8,8 +8,8 @@ import { useState } from 'react';
 import { createId } from 'data/createId';
 import { useLocation, useNavigate } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-
-export const Header = ({ text = 'Next', location }) => {
+//----------------------------------------------------------
+export const Header = ({ text = 'Next', location, activeId=1 }) => {
   const [isOpen, setIsOpen] = useState(false);
   // const setIsOpenModal = isOpen => {
   //   setIsOpen(isOpen);
@@ -19,8 +19,9 @@ export const Header = ({ text = 'Next', location }) => {
   console.log(locat);
   const content = [
     { title: 'Домашня', link: '/esthetic-garage_react' },
-    { title: 'Роботи', link: '/works' },
     { title: 'Послуги', link: '/services' },
+    { title: 'Роботи', link: '/works' },
+    
     { title: 'Про нас', link: '0' },
   ];
   const contentWitchId = createId(content);
@@ -53,7 +54,7 @@ export const Header = ({ text = 'Next', location }) => {
                       navigate(link, { replace: false });
                     }}
                   >
-                    <h4 className={css.navLink}>{title}</h4>
+                    <h4 className={activeId===id?css.navLinkActive:css.navLink}>{title}</h4>
                   </li>
                 );
               })}

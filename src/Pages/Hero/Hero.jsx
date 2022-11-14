@@ -20,7 +20,9 @@ export const Hero = () => {
     }
     
    }
-  
+   const inital ={opacity:0}
+   const animate ={opacity:1}
+   const transition ={duration:0.5}
   useEffect(() => {
     
       // setIsVideoPlay()
@@ -88,8 +90,8 @@ export const Hero = () => {
 
   return (
     <>
-    <Header text='Послуги' location={'/services'}/>
-    <div className={css.hero}>
+    <Header text='Послуги' location={'/services'} activeId={1}/>
+    <motion.section className={css.hero} initial={inital} animate={animate} transition={transition}>
       {isVideoPlay ? (
         <video
           src={video}
@@ -202,7 +204,7 @@ export const Hero = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.section>
     </>
   );
 };

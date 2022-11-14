@@ -5,16 +5,18 @@ import svg from '../../images/symbol-defs.svg';
 import 'swiper/css';
 import { Header } from 'components/Header/Header';
 import 'swiper/css/pagination';
-
+import { motion } from 'framer-motion';
 import { Autoplay, Pagination } from 'swiper';
 import { useRef } from 'react';
 // import { useState } from 'react';
 export const Works = () => {
   const swiperRef = useRef();
-
+  const inital ={opacity:0}
+  const animate ={opacity:1}
+  const transition ={duration:1}
   return (
-    <><Header/>
-    <section className={css.works}>
+    <><Header activeId={3}/>
+    <motion.section className={css.works} initial={inital} animate={animate} transition={transition}>
       
       <h2 className={css.worksTitle}>Наші роботи</h2>
       <div className={css.swiperWrap}>
@@ -64,7 +66,7 @@ export const Works = () => {
           })}
         </Swiper>
       </div>
-    </section>
+    </motion.section>
     </>
   );
 };

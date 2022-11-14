@@ -1,5 +1,5 @@
-import ph1 from '../images/works/IMG_8490.JPG';
-import ph2 from '../images/works/IMG_8961.JPG';
+import ph1 from '../images/works/IMG_8490.jpg';
+import ph2 from '../images/works/IMG_8961.jpg';
 import ph3 from '../images/works/P1040689.jpg';
 import ph4 from '../images/works/P1120544.jpg';
 import ph5 from '../images/works/P1120643.jpg';

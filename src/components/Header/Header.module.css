@@ -57,6 +57,11 @@ border-top: none;
 .navItem{
 padding: 0px 0;
 cursor: pointer;
+transition: all 0.1s linear;
+}
+.navItem:hover{
+    transform: scale(1.1);
+    transition: all 0.1s linear;
 }
 .navLink{
 color: white;
@@ -64,9 +69,14 @@ font-size: 20px;
 font-weight: 600;
 z-index: 305;
 }
-.navItem:hover{
-    transform: scale(1.1);
-}
+.navLinkActive{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 305;
+    color: #f5c946;
+    }
+
 .nextBtn{
     display: flex;
     align-items: center;
@@ -81,9 +91,11 @@ z-index: 305;
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
 .nextBtn:hover{
 color: wheat;
+transition: all 0.3s linear;
 }
 .nextIcon{
     margin-left: 5px;
