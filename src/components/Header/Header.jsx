@@ -30,7 +30,7 @@ export const Header = () => {
       <div className={css.wrap}>
         <img className={css.logo} src={logo} alt="logo" />
         <Socials iconStyles={{ color: '#d6c0c0' }} />
-        <button className={css.burgerBtn} onClick={() => setIsOpen(true)}>
+        <button className={css.burgerBtn} onClick={() => setIsOpen(!isOpen)}>
           <svg className={css.burger}>
             <use href={`${svg}#icon-menu`} />
           </svg>

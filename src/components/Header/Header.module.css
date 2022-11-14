@@ -55,6 +55,7 @@ border: 1px solid white;
 }
 .navItem{
 padding: 0px 0;
+cursor: pointer;
 }
 .navLink{
 color: white;
