@@ -1,7 +1,7 @@
 import css from './Socials.module.css';
 import svg from '../../images/symbol-defs.svg';
 export const Socials = ({ iconStyles}) => {
-    console.log(iconStyles);
+    
   const socials = [
     {
       id: 1,

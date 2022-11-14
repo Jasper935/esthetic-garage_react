@@ -19,7 +19,7 @@ export function App() {
 
   const onScroll = (e) => {
     SetYOffset(e.currentTarget.pageYOffset)
-    console.log(e);
+    // console.log(e);
   }
 
   useEffect(() => {

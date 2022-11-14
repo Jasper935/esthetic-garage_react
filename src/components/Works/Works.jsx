@@ -1,6 +1,6 @@
 import css from './Works.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { worksPhotos } from 'worksList';
+import { worksPhotos } from '../../data/worksList';
 import svg from '../../images/symbol-defs.svg';
 import 'swiper/css';
 

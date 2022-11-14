@@ -1,19 +1,41 @@
 import css from './Services.module.css';
 import svg from '../../images/symbol-defs.svg';
 import { useState } from 'react';
+import { createId } from 'data/createId';
 export const Services = () => {
   const [activeElem, SetActiveElem] = useState(0);
 
   const ServicesList = [
-    { id: 1, title: 'Хімчистка' },
-    { id: 2, title: 'Полірування авто' },
-    { id: 3, title: 'Захист нанокерамікою' },
-    { id: 4, title: 'Detailing мийка' },
-    { id: 5, title: 'Оклейка антигравійною плівкою' },
-    { id: 6, title: 'Передпродажна підготовка' },
-    { id: 7, title: 'Оклейка антигравійною плівкою' },
+    {
+      id: 1,
+      title: 'Очистка авто',
+      text: 'Нанокерамічний захист лакофарбового покриття - найкращий спосіб підкреслити красивий дизайн автомобіля!',
+    },
+    { id: 2, title: 'Полірування' },
+    { id: 3, title: 'Захист екстер‘єру' },
+    { id: 4, title: 'Полірування фар' },
+    { id: 5, title: 'Захист фар антигравійною плівкою' },
+    { id: 6, title: 'Сушка салонів' },
+    { id: 8, title: 'Антидощ на вікна' },
+    { id: 9, title: 'Безпечна мийка двигуна' },
+    { id: 7, title: 'Полірування глянцевих деталей салону' },
+    { id: 7, title: 'Кондиціонування шкіри' },
+    { id: 7, title: 'Озонування салону' },
+    { id: 7, title: 'Захист шкіри нанокерамікою' },
+    { id: 7, title: 'Захист дисків нанокерамікою' },
+    { id: 7, title: 'Антихром' },
+    { id: 7, title: 'Тонування оптики' },
+    { id: 7, title: 'Озонування салону' },
+    { id: 7, title: 'Реставрація сколів' },
+    { id: 7, title: 'Захист моніторів антигравійною плівкою' },
+    {
+      id: 7,
+      title: 'Захист глянцевих елемегтів інтер‘єру антигравійною плівкою',
+    },
+    { id: 7, title: 'Очистка кузова від бітуму' },
+    { id: 7, title: 'Відновлення гарного вигляду зовнішнього пластику' },
   ];
-
+  const finalServicesList = createId(ServicesList);
   const onClick = id => {
     id === activeElem ? SetActiveElem(0) : SetActiveElem(id);
   };
@@ -24,7 +46,7 @@ export const Services = () => {
         <h2 className={css.title}>Послуги</h2>
       </div>
       <ul className={css.servicesLsit}>
-        {ServicesList.map(({ title, id }) => {
+        {finalServicesList.map(({ title, id }) => {
           return (
             <li
               key={id}
@@ -49,7 +71,27 @@ export const Services = () => {
                   activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
                 }
               >
-                <div className={css.cardLeftSide}>dgxhdasfhdfhdfhd</div>
+                <div className={css.hiddenLeft}>
+                  <p className={css.leftText}>{finalServicesList[0].text}</p>
+                </div>
+                <div className={css.hiddenRight}>
+                  <div className={css.details}>
+                    <p className={css.detailsPrice}>
+                      Ціна послуги залежить від моделі і стану автомобіля, для
+                      консультації телефонуйте по номеру
+                       +38(095)014-78-88
+                      <svg className={css.priceIcon}>
+                        <use href={`${svg}#icon-price`} />
+                      </svg>{' '}
+                    </p>
+                    <p className={css.detailsTime}>
+                      1-2 дні, залежить від зайнятості майстрів.
+                      <svg className={css.timeIcon}>
+                        <use href={`${svg}#icon-time2`} />
+                      </svg>{' '}
+                    </p>
+                  </div>
+                </div>
               </div>
             </li>
           );
