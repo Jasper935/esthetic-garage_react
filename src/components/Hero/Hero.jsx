@@ -5,6 +5,7 @@ import logo from '../../images/logo3.png';
 import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
@@ -12,11 +13,24 @@ export const Hero = () => {
   const [isVideoPlay, setIsVideoPlay] = useState(true);
   const [messageActive, setMessageActive] = useState(false);
   const vidRef = useRef(null);
-
-  useEffect(() => {
+  async function play(){
     if (isVideoPlay) {
-      vidRef.current.play();
+      await vidRef.current.play();
+      
     }
+    
+   }
+  
+  useEffect(() => {
+    
+      // setIsVideoPlay()
+      
+      localStorage.getItem('messageActive')
+    play()
+    return()=>{
+      localStorage.setItem('video', isVideoPlay)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVideoPlay]);
 
   const content = [
@@ -73,6 +87,8 @@ export const Hero = () => {
   ];
 
   return (
+    <>
+    <Header/>
     <div className={css.hero}>
       {isVideoPlay ? (
         <video
@@ -82,6 +98,7 @@ export const Hero = () => {
           className={css.video}
           muted
           loop
+          onLoad={()=>play()}
         />
       ) : (
         <img src={bg} className={css.video} alt="car" />
@@ -186,5 +203,6 @@ export const Hero = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };

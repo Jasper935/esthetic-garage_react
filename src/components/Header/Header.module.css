@@ -9,9 +9,10 @@
     background-color: rgba(0, 0, 0, 0.1);
     background-color: transparent;
     /* backdrop-filter: blur(30px); */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .wrap{
+    position: relative;
    width: 1100px; 
    margin-left: auto;
    margin-right: auto;
@@ -37,4 +38,30 @@
     fill: white;
     width: 40px;
     height: 40px;
+}
+.navList{
+    position: absolute;
+    top: 50px;
+    right:  15px;
+    width: 150px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+backdrop-filter: blur(5px);
+/* border-radius: 20px; */
+border: 1px solid white;
+}
+.navItem{
+padding: 0px 0;
+}
+.navLink{
+color: white;
+font-size: 20px;
+font-weight: 600;
+z-index: 305;
+}
+.navItem:hover{
+    transform: scale(1.1);
 }

@@ -1,12 +1,13 @@
 import './index.css'
 import './App.css';
-import { Header } from 'components/Header/Header';
+// import { Header } from 'components/Header/Header';
 import { Hero } from 'components/Hero/Hero';
 import { Works } from 'components/Works/Works';
 // import { Modal } from 'components/Modal/Modal';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Services } from 'components/Services/Services';
+import { Route, Routes } from 'react-router-dom';
 // import { useRef } from 'react';
 
 //-----------------------------------------------------------------------------------
@@ -31,12 +32,20 @@ export function App() {
 
   return (
     <div className='backdrop' >
-      <Header />
+      
+      <Routes>
+      {/* <Route index path="/header" element={<Header />} /> */}
+        <Route index path="/esthetic-garage_react" element={<Hero />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/services" element={<Services />} />
+        {/* <Route path='*' element={<NotFound/>}/> */}
+      </Routes>
 
-      <Hero />
 
-      <Works />
-      <Services />
+
+
+
+
       {/* <Modal/> */}
     </div>
   );

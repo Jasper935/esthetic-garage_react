@@ -5,7 +5,7 @@
   height: 100vh;
   top: 0;
   right: 0;
-  background-color: rgba(122, 107, 107, 0.9);
+  background-color: #e3d1d1e6;
   z-index: 300;
   /* background-image: url('../../images/logo2.png'); */
   background-size: 300px;
@@ -14,19 +14,37 @@
   display: flex;
   justify-content: flex-end;
 }
+.modalHidden{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+}
 .modalContent {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 35vw;
   height: 100vh;
-  background-color: rgb(40, 42, 44);
-  background-image: url('../../images/modalbg.JPG');
+  
+  background-image: linear-gradient(
+      to top,
+      rgba(67, 67, 70, 0.4),
+      rgba(223, 215, 215, 0.8)
+    ),
+    url('../../images/bgmodal.jpg');
+  
+    background-size: cover;
 }
 .window {
   width: 500px;
   height: 600px;
-  /* background-color: rgb(40, 42, 44); */
+ 
 }
 .modalLogo {
   position: absolute;
@@ -35,4 +53,24 @@
   transform: translateY(-50%) translateX(-50%);
   width: 750px;
   height: 250px;
+}
+
+.closeBtn{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+border: none;
+background-color: transparent;
+transform: scale(1);
+transition: all 0.3s ease;
+}
+.closeBtn:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  }
+.closeIcon{
+  
+width: 50px;
+height: 50px;
+fill: antiquewhite;
 }

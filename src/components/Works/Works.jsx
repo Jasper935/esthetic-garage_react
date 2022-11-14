@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { worksPhotos } from '../../data/worksList';
 import svg from '../../images/symbol-defs.svg';
 import 'swiper/css';
-
+import { Header } from 'components/Header/Header';
 import 'swiper/css/pagination';
 
 import { Autoplay, Pagination } from 'swiper';
@@ -13,7 +13,9 @@ export const Works = () => {
   const swiperRef = useRef();
 
   return (
+    <><Header/>
     <section className={css.works}>
+      
       <h2 className={css.worksTitle}>Наші роботи</h2>
       <div className={css.swiperWrap}>
         <button
@@ -63,5 +65,6 @@ export const Works = () => {
         </Swiper>
       </div>
     </section>
+    </>
   );
 };

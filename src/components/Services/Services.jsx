@@ -2,6 +2,7 @@ import css from './Services.module.css';
 import svg from '../../images/symbol-defs.svg';
 import { useState } from 'react';
 import { createId } from 'data/createId';
+import { Header } from 'components/Header/Header';
 export const Services = () => {
   const [activeElem, SetActiveElem] = useState(0);
 
@@ -42,6 +43,7 @@ export const Services = () => {
 
   return (
     <section className={css.services}>
+      <Header/>
       <div className={css.titleWrap}>
         <h2 className={css.title}>Послуги</h2>
       </div>
