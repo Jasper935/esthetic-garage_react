@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/esthetic-garage_react/static/css/main.71f3844f.css",
-    "main.js": "/esthetic-garage_react/static/js/main.a0f20c4c.js",
+    "main.css": "/esthetic-garage_react/static/css/main.df66ec5f.css",
+    "main.js": "/esthetic-garage_react/static/js/main.b5fc56bf.js",
     "static/media/video_last.mp4": "/esthetic-garage_react/static/media/video_last.46e1db6f0c3bb84a4817.mp4",
-    "static/media/P1120691.jpg": "/esthetic-garage_react/static/media/P1120691.0e5cde3f66b98f9068c1.jpg",
-    "static/media/P1120544.jpg": "/esthetic-garage_react/static/media/P1120544.b96f4acfdea5a86218e0.jpg",
-    "static/media/P1040689.jpg": "/esthetic-garage_react/static/media/P1040689.964ef0a627907dc30311.jpg",
-    "static/media/P1120643.jpg": "/esthetic-garage_react/static/media/P1120643.5edc6c4f52678700959f.jpg",
-    "static/media/P1120645.jpg": "/esthetic-garage_react/static/media/P1120645.e12d9a7e6146d5ad54f4.jpg",
-    "static/media/P1120680.jpg": "/esthetic-garage_react/static/media/P1120680.18ab0d1c90f33fb24073.jpg",
-    "static/media/IMG_8961.JPG": "/esthetic-garage_react/static/media/IMG_8961.d9f1583503f42d3877dd.JPG",
+    "static/media/P1120544.jpg": "/esthetic-garage_react/static/media/P1120544.43933429793bd67735d2.jpg",
+    "static/media/bg3.JPG": "/esthetic-garage_react/static/media/bg3.c4e8c5d1053378a8fa89.JPG",
     "static/media/head_img.JPG": "/esthetic-garage_react/static/media/head_img.ea2945f42c16475a2847.JPG",
     "static/media/bg2.JPG": "/esthetic-garage_react/static/media/bg2.9ec610773960ece6f832.JPG",
-    "static/media/IMG_8490.JPG": "/esthetic-garage_react/static/media/IMG_8490.817e1c58f30e839fed57.JPG",
     "static/media/bg9.JPG": "/esthetic-garage_react/static/media/bg9.a4dc3382dd567f47726e.JPG",
     "static/media/logo2.png": "/esthetic-garage_react/static/media/logo2.fb12e519ed50418240cc.png",
     "static/media/logo3.png": "/esthetic-garage_react/static/media/logo3.7669633d509a20bdc9cf.png",
     "static/media/symbol-defs.svg": "/esthetic-garage_react/static/media/symbol-defs.5a136b87a7538936d475558afa8903c9.svg",
     "index.html": "/esthetic-garage_react/index.html",
-    "main.71f3844f.css.map": "/esthetic-garage_react/static/css/main.71f3844f.css.map",
-    "main.a0f20c4c.js.map": "/esthetic-garage_react/static/js/main.a0f20c4c.js.map"
+    "main.df66ec5f.css.map": "/esthetic-garage_react/static/css/main.df66ec5f.css.map",
+    "main.b5fc56bf.js.map": "/esthetic-garage_react/static/js/main.b5fc56bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.71f3844f.css",
-    "static/js/main.a0f20c4c.js"
+    "static/css/main.df66ec5f.css",
+    "static/js/main.b5fc56bf.js"
   ]
 }
