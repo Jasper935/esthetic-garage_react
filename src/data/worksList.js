@@ -1,6 +1,6 @@
 import ph1 from '../images/works/IMG_8500.jpg';
 import ph2 from '../images/works/IMG_8517.jpg';
-import ph3 from '../images/works/IMG_8961.jpg';
+// import ph3 from '../images/works/IMG_8961.jpg';
 import ph4 from '../images/works/P1040639.jpg';
 import ph5 from '../images/works/P1040656.jpg';
 import ph6 from '../images/works/P1040668.jpg';
@@ -34,7 +34,7 @@ import ph32 from '../images/works/P1040939.jpg';
 import ph33 from '../images/works/P1040941.jpg';
 import ph34 from '../images/works/P1040944.jpg';
 
-export const worksPhotos = [ph1,ph2, ph3, ph4, ph5, ph6, ph7, ph8, ph9,
+export const worksPhotos = [ph1,ph2,  ph4, ph5, ph6, ph7, ph8, ph9,
     ph10,
     ph11,
     ph12,
