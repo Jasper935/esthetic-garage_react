@@ -4,6 +4,7 @@ import './App.css';
 import { Hero } from 'Pages/Hero/Hero';
 import { Works } from 'Pages/Works/Works';
 // import { Modal } from 'components/Modal/Modal';
+import { About } from 'Pages/About/About';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Services } from 'Pages/Services/Services';
@@ -38,6 +39,7 @@ export function App() {
         <Route index path='/'  element={<Hero />} />
         <Route path="works" element={<Works />} />
         <Route path="services" element={<Services />} />
+        <Route path="about" element={<About />} />
         {/* <Route path='*' element={<NotFound/>}/> */}
       </Routes>
 

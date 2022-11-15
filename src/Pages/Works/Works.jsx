@@ -15,7 +15,7 @@ export const Works = () => {
   const animate ={opacity:1}
   const transition ={duration:1}
   return (
-    <><Header activeId={3}/>
+    <><Header text='Про нас' activeId={3} location='/about'/>
     <motion.section className={css.works} initial={inital} animate={animate} transition={transition}>
       
       <h2 className={css.worksTitle}>Наші роботи</h2>

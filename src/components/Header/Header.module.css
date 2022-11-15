@@ -23,6 +23,7 @@
     width: 156px;
     margin: -20px;
     height: 95px;
+    cursor: pointer;
 }
 .burgerBtn{
     background-color: transparent;
@@ -47,7 +48,7 @@
     height: 150px;
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: baseline;
 justify-content: center;
 backdrop-filter: blur(25px);
 /* border-radius: 20px; */
@@ -67,7 +68,10 @@ transition: all 0.1s linear;
 color: white;
 font-size: 20px;
 font-weight: 600;
+width: 100%;
 z-index: 305;
+
+padding-left: 30px;
 }
 .navLinkActive{
     color: white;
@@ -75,6 +79,7 @@ z-index: 305;
     font-weight: 600;
     z-index: 305;
     color: #f5c946;
+    padding-left: 30px;
     }
 
 .nextBtn{
