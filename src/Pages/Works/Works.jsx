@@ -12,9 +12,9 @@ import { Socials } from 'components/Socials/Socials';
 // import { useState } from 'react';
 export const Works = () => {
   const swiperRef = useRef();
-  const inital ={opacity:0}
-  const animate ={opacity:1}
-  const transition ={duration:1}
+  const inital ={opacity:0, }
+  const animate ={opacity:1 , }
+  const transition ={duration:2}
   return (
     <><Header text='Про нас' activeId={3} location='/about'/>
     <motion.section className={css.works} initial={inital} animate={animate} transition={transition}>

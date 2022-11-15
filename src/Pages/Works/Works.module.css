@@ -12,7 +12,7 @@
     background-image: linear-gradient(
         to bottom,
         rgba(67, 67, 70, 0.7),
-        rgba(60, 50, 50, 0.9)
+        rgba(60, 50, 50, 1)
       ), url('../../images/bg3.JPG');
       background-size: cover;
     
@@ -22,6 +22,7 @@
     color: white;
     font-size: 50px;
     margin-bottom: 100px;
+    padding-left: 50px;
 }
 .swiperWrap{
     position: relative;
@@ -40,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* backdrop-filter: blur(50px); */
     background-color: rgba(37, 35, 35, 0.9);
     
     padding: 10px;
@@ -96,14 +96,9 @@ font-weight: 600;
     width: 100%;
     height: 100%;
     transition: all 0.5s linear;
-    transform: scale(1);
-    /* scale: 1; */
+    
 }
-.swiperSlide:hover{
-    /* scale: 1.1; */
-    transform: scale(1.1);
-    transition: all 0.5s linear;
-}
+
 
 .swiperBtnPrev{
     position: absolute;
