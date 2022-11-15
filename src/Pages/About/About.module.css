@@ -9,14 +9,14 @@ background-image: linear-gradient(
 
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
 }
 .aboutTitle{
-  padding: 75px 0;
+  
   color: white;
   font-size: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
   padding-left: 50px;
 }
 
@@ -84,10 +84,10 @@ background-image: linear-gradient(
   align-items: center;
   justify-content: baseline;
   width: 250px;
-  height: 250px;
+  
 }
 .aboutItem:nth-child(2){
-  width: 400px;
+  width: 300px;
 }
 .aboutIcon{
 fill: white;
