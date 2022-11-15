@@ -25,6 +25,14 @@
     height: 95px;
     cursor: pointer;
 }
+.contentWrap{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: opacity 0.5s ease 0 1 ;
+    
+}
 .burgerBtn{
     background-color: transparent;
     display: flex;
@@ -41,22 +49,23 @@
     height: 40px;
 }
 .navList{
+    
     position: absolute;
-    top: 50px;
-    right:  15px;
-    width: 150px;
-    height: 150px;
+    top: 0px;
+    left:  50%;
+    width: 700px;
+    height: 50px;
 display: flex;
-flex-direction: column;
-align-items: baseline;
+transform: translateX(-50%);
+align-items: center;
 justify-content: center;
-backdrop-filter: blur(25px);
-/* border-radius: 20px; */
-box-shadow: 0 0 5px 0 #f6e7e7;
+
+
+
 border-top: none;
 }
 .navItem{
-padding: 0px 0;
+padding: 0px 25px;
 cursor: pointer;
 transition: all 0.1s linear;
 }
@@ -108,4 +117,12 @@ transition: all 0.3s linear;
     width: 30px;
     height: 30px;
     transform: rotate(90deg);
+}
+@keyframes opacity {
+    0%{
+       opacity: 0; 
+    }
+    100%{
+        opacity: 1;  
+    }
 }

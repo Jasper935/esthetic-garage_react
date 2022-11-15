@@ -2,12 +2,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    
+    padding: 25px 0;
     z-index: 25;
 }
 
 .socialsItem{
     margin-right: 50px;
+    padding-top: 5px;
 }
 .socialsItem:last-child{
     margin-right: 0;

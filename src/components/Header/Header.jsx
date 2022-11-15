@@ -6,14 +6,14 @@ import { motion } from 'framer-motion';
 // import { Modal } from 'components/Modal/Modal';
 import { useState } from 'react';
 import { createId } from 'data/createId';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 //----------------------------------------------------------
-export const Header = ({ text = 'Next', location, activeId=1 }) => {
+export const Header = ({ text = 'Next', location, activeId = 1 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const navigate = useNavigate();
-  
+
   const content = [
     { title: 'Домашня', link: '/esthetic-garage_react' },
     { title: 'Послуги', link: '/services' },
@@ -24,40 +24,60 @@ export const Header = ({ text = 'Next', location, activeId=1 }) => {
   return (
     <>
       <motion.header
-        
         className={css.header}
         initial={{ y: -300 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <div className={css.wrap}>
-          <img className={css.logo} onClick={()=>navigate('/esthetic-garage_react', { replace: false })} src={logo} alt="logo" />
-          <Socials iconStyles={{ color: '#d6c0c0' }} />
+          <img
+            className={css.logo}
+            onClick={() =>
+              navigate('/esthetic-garage_react', { replace: false })
+            }
+            src={logo}
+            alt="logo"
+          />
+          
+            {isOpen ? (
+              <ul className={css.navList}>
+                {contentWitchId.map(({ id, title, link }) => {
+                  return (
+                    <li
+                      className={css.navItem}
+                      key={id}
+                      onClick={() => {
+                        setIsOpen(false);
+                        navigate(link, { replace: false });
+                      }}
+                    >
+                      <h4
+                        className={
+                          activeId === id ? css.navLinkActive : css.navLink
+                        }
+                      >
+                        {title}
+                      </h4>
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : (
+              <Socials iconStyles={{ color: '#d6c0c0' }} />
+            )}
+          
+          
           <button className={css.burgerBtn} onClick={() => setIsOpen(!isOpen)}>
-            <svg className={css.burger}>
+            <svg className={css.burger} style={{fill:isOpen?'#f5c946':"white"}}>
               <use href={`${svg}#icon-menu`} />
             </svg>
           </button>
-          {isOpen && (
-            <ul className={css.navList}>
-              {contentWitchId.map(({ id, title, link }) => {
-                return (
-                  <li
-                    className={css.navItem}
-                    key={id}
-                    onClick={() => {
-                      setIsOpen(false);
-                      navigate(link, { replace: false });
-                    }}
-                  >
-                    <h4 className={activeId===id?css.navLinkActive:css.navLink}>{title}</h4>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+          
         </div>
-        <button className={css.nextBtn} onClick={()=>navigate(location, { replace: false })}>
+        <button
+          className={css.nextBtn}
+          onClick={() => navigate(location, { replace: false })}
+        >
           {text}{' '}
           <svg className={css.nextIcon}>
             <use href={`${svg}#icon-arrow`} />
