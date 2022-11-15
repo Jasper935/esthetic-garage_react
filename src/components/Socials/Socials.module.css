@@ -9,6 +9,10 @@
 .socialsItem{
     margin-right: 50px;
     padding-top: 5px;
+    transform: scale(1);
+}
+.socialsItem:hover{
+    transform: scale(1.1);
 }
 .socialsItem:last-child{
     margin-right: 0;
@@ -16,6 +20,10 @@
 .socialsLink{
 
 }
+
+/* .socialsLink:hover{
+    
+} */
 .socialsIcon{
     fill: white;
     width: 20px;

@@ -6,4 +6,65 @@ background-image: linear-gradient(
         rgba(67, 67, 70, 0.7),
         rgba(60, 50, 50, 0.9)
       ), url('../../images/bg9.JPG');
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+}
+.aboutTitle{
+  padding: 75px 0;
+  color: white;
+  font-size: 50px;
+}
+
+
+.contacts{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 75;
+  font-size: 25px;
+  margin: 75px 0;
+}
+
+.telLink{
+  font-family:  monospace;
+  
+  
+  padding: 5px 3px;
+  color: white;
+  font-weight: 700;
+  /* width: 400px; */
+  
+ 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  
+}
+.telIcon{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.location{
+  padding: 5px 10px;
+  color: white;
+  font-weight: 700;
+  
+ 
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.locIcon{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin-right: 10px;
+  margin-left: 10px;
 }
