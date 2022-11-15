@@ -57,13 +57,13 @@ export const Works = () => {
           modules={[Autoplay, Pagination]}
           loop
         >
-          {worksPhotos.map((el, i) => {
+          {/* {worksPhotos.map((el, i) => {
             return (
               <SwiperSlide className={css.swiperSlide} key={i}>
                 <img src={el} alt={'work' + i} />
               </SwiperSlide>
             );
-          })}
+          })} */}
         </Swiper>
       </div>
     </motion.section>

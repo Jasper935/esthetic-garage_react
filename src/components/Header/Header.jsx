@@ -18,7 +18,7 @@ export const Header = ({ text = 'Next', location, activeId=1 }) => {
   const locat = useLocation();
   console.log(locat);
   const content = [
-    { title: 'Домашня', link: '/esthetic-garage_react' },
+    { title: 'Домашня', link: '/' },
     { title: 'Послуги', link: '/services' },
     { title: 'Роботи', link: '/works' },
     
