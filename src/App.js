@@ -36,7 +36,7 @@ export function App() {
       
       <Routes>
       {/* <Route index path="/header" element={<Header />} /> */}
-        <Route index path='/'  element={<Hero />} />
+        <Route index path='/esthetic-garage_react'  element={<Hero />} />
         <Route path="works" element={<Works />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />

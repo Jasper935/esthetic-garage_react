@@ -15,7 +15,7 @@ export const Header = ({ text = 'Next', location, activeId=1 }) => {
   const navigate = useNavigate();
   
   const content = [
-    { title: 'Домашня', link: '/' },
+    { title: 'Домашня', link: '/esthetic-garage_react' },
     { title: 'Послуги', link: '/services' },
     { title: 'Роботи', link: '/works' },
     { title: 'Про нас', link: '/about' },
@@ -31,7 +31,7 @@ export const Header = ({ text = 'Next', location, activeId=1 }) => {
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <div className={css.wrap}>
-          <img className={css.logo} onClick={()=>navigate('/', { replace: false })} src={logo} alt="logo" />
+          <img className={css.logo} onClick={()=>navigate('/esthetic-garage_react', { replace: false })} src={logo} alt="logo" />
           <Socials iconStyles={{ color: '#d6c0c0' }} />
           <button className={css.burgerBtn} onClick={() => setIsOpen(!isOpen)}>
             <svg className={css.burger}>
