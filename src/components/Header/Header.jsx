@@ -6,22 +6,18 @@ import { motion } from 'framer-motion';
 // import { Modal } from 'components/Modal/Modal';
 import { useState } from 'react';
 import { createId } from 'data/createId';
-import { useLocation, useNavigate } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
+
 //----------------------------------------------------------
 export const Header = ({ text = 'Next', location, activeId=1 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const setIsOpenModal = isOpen => {
-  //   setIsOpen(isOpen);
-  // };
+  
   const navigate = useNavigate();
-  const locat = useLocation();
-  console.log(locat);
+  
   const content = [
     { title: 'Домашня', link: '/' },
     { title: 'Послуги', link: '/services' },
     { title: 'Роботи', link: '/works' },
-    
     { title: 'Про нас', link: '0' },
   ];
   const contentWitchId = createId(content);
