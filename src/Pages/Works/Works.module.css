@@ -30,6 +30,29 @@
     z-index: 5;
     
 }
+.worksSocials{
+    position: absolute;
+    top: 1px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 300;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: blur(50px); */
+    background-color: rgba(37, 35, 35, 0.9);
+    
+    padding: 10px;
+    padding-top: 15px;
+    border-radius: 0 0 15px 15px;
+    
+}
+.worksSocialsTitle{
+color: white;
+margin-right: 40px;
+font-weight: 600;
+}
 .swiperWrap::after{
     position: absolute;
     top: -15px;

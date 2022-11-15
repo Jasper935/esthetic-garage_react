@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import { motion } from 'framer-motion';
 import { Autoplay, Pagination } from 'swiper';
 import { useRef } from 'react';
+import { Socials } from 'components/Socials/Socials';
 // import { useState } from 'react';
 export const Works = () => {
   const swiperRef = useRef();
@@ -36,6 +37,10 @@ export const Works = () => {
             <use href={`${svg}#icon-arrow`} />
           </svg>
         </button>
+        <div className={css.worksSocials}>
+         <p className={css.worksSocialsTitle}>Це більше фото та відео контенту в наших соціальних мережах:</p> 
+         <Socials/>
+        </div>
         <Swiper
           className={css.swiper}
           onSwiper={swiper => {
