@@ -34,7 +34,7 @@ import ph32 from '../images/works/P1040939.jpg';
 import ph33 from '../images/works/P1040941.jpg';
 import ph34 from '../images/works/P1040944.jpg';
 
-export const worksPhotos = [ ph3, ph4, ph5, ph6, ph7, ph8, ph9,
+export const worksPhotos = [ph1,ph2, ph3, ph4, ph5, ph6, ph7, ph8, ph9,
     ph10,
     ph11,
     ph12,
@@ -56,4 +56,7 @@ export const worksPhotos = [ ph3, ph4, ph5, ph6, ph7, ph8, ph9,
     ph28,
     ph29,
     ph30,
-    ph31];
+    ph31, 
+    ph32,
+    ph33,
+    ph34];
