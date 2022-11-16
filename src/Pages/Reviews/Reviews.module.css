@@ -57,8 +57,8 @@ padding: 0 10px;
   margin-right: 10px;
   color: white;
   
-  -webkit-box-shadow: 0 0 10px 0px #d4d7da;
-  box-shadow: 0 0 10px 0px #d4d7da;
+  -webkit-box-shadow: 0 0 5px 0px #d4d7da;
+  box-shadow: 0 0 5px 0px #d4d7da;
   border: 1px solid white;
 }
 .reviewsInput:last-child {
@@ -92,7 +92,7 @@ padding: 0 10px;
   resize: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 10px 0px #d4d7da;
-  box-shadow: 0 0 10px 0px #e3e7ea;
+  box-shadow: 0 0 5px 0px #ffffff;
   background-color: transparent;
 }
 .reviewsInputText::placeholder {
@@ -142,29 +142,33 @@ outline: none;
   margin-bottom: 25px;
   width: 90%;
   min-height: 80px;
-  /* padding-left: 50px; */
-  padding: 10px;
+  overflow: hidden;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 5px 2px #a5a5ac;
+  box-shadow: 0 0 2px 2px #3c3232;
   border-radius: 20px;
 }
+
 .reviewsItemWrap {
   display: flex;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid white;
+  
   
   flex-direction: column;
   justify-content: center;
-  height: 65px;
-  padding-bottom: 5px;
-  min-width: 100px;
+  /* height: 65px; */
+  padding: 10px;
+  padding-left: 65px;
+  width: 100%;
+  background-color: #3c3232;
+  
 }
 .reviewsIcon {
   position: absolute;
-  left: 30px;
+  left: 20%;
   top: 20px;
   /* transform: translateY(-50%); */
   width: 40px;
@@ -192,9 +196,14 @@ outline: none;
 .reviewsMessage {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-size: 15px;
-  padding:  20px;
+  padding:  15px;
+  min-height: 75px;
+  
+  
+  width: 100%;
   
 }
 .moreBtn {
