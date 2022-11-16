@@ -20,6 +20,7 @@
     ),
     url('../../images/revBg.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 .reviewsTitle {
   color: white;
