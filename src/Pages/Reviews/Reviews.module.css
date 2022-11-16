@@ -16,7 +16,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(67, 67, 70, 0.9),
-      rgba(60, 50, 50, 1)
+      rgba(106, 93, 93, 0.9)
     ),
     url('../../images/revBg.jpg');
   background-size: cover;
@@ -59,7 +59,7 @@ padding: 0 10px;
   
   -webkit-box-shadow: 0 0 5px 0px #d4d7da;
   box-shadow: 0 0 5px 0px #d4d7da;
-  border: 1px solid white;
+  border: 1px solid #3c3232;
 }
 .reviewsInput:last-child {
   margin-right: 0;
@@ -86,7 +86,7 @@ padding: 0 10px;
   padding: 7px 0;
   margin-bottom: 25px;
   width: 310px;
-  border: 1px solid white;
+  border: 1px solid #3c3232;
   color: white;
   height: 100px;
   resize: none;
@@ -219,9 +219,9 @@ outline: none;
   width: 50px;
   height: 50px;
 position: fixed;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
+bottom: 30px;
+right:  30px;
+/* transform: translateX(-50%) translateY(-50%); */
 fill: white;
 z-index: 350;
 animation-name: loader;
