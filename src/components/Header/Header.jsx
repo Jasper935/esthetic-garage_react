@@ -3,7 +3,7 @@ import logo from '../../images/logo2.png';
 import svg from '../../images/symbol-defs.svg';
 import { Socials } from 'components/Socials/Socials';
 import { motion } from 'framer-motion';
-// import { Modal } from 'components/Modal/Modal';
+
 import { useState } from 'react';
 import { createId } from 'data/createId';
 import { useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ export const Header = ({ text = 'Next', location, activeId = 1 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigate = useNavigate();
-
+ const screenWidth =window.screen.width
   const content = [
     { title: 'Домашня', link: '/esthetic-garage_react' },
     { title: 'Послуги', link: '/services' },
@@ -42,7 +42,7 @@ export const Header = ({ text = 'Next', location, activeId = 1 }) => {
           />
           
             {isOpen ? (
-              <ul className={css.navList}>
+              <motion.ul className={css.navList} initial={{opacity:0, x: '100%'}} animate={{opacity:1, x:0}} transition={{duration:0.5}}>
                 {contentWitchId.map(({ id, title, link }) => {
                   return (
                     <li
@@ -63,9 +63,10 @@ export const Header = ({ text = 'Next', location, activeId = 1 }) => {
                     </li>
                   );
                 })}
-              </ul>
+              <div className={css.socailsWrap}><Socials iconStyles={{width:'35px', color: 'white' }} /></div>  
+              </motion.ul>
             ) : (
-              <Socials iconStyles={{ color: '#d6c0c0' }} />
+              screenWidth>768&& <Socials iconStyles={{ color: '#d6c0c0' }} />
             )}
           
           
