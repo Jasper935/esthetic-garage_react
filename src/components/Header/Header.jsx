@@ -26,9 +26,9 @@ export const Header = ({ text = 'Next', location, activeId = 1 }) => {
     <>
       <motion.header
         className={css.header}
-        initial={{ y: -300 }}
+        initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
+        transition={{ duration: 1.5, delay: 0 }}
       >
         <div className={css.wrap}>
           <img

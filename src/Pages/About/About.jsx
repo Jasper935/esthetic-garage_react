@@ -2,6 +2,7 @@ import css from './About.module.css';
 import { Header } from 'components/Header/Header';
 import { Socials } from 'components/Socials/Socials';
 import svg from '../../images/symbol-defs.svg';
+import { motion } from 'framer-motion';
 //---------------------------------------------------
 export const About = () => {
   return (
@@ -9,7 +10,9 @@ export const About = () => {
     <section className={css.about}>
       
       <h2 className={css.aboutTitle}>Про нас</h2>
-      <ul className={css.aboutList}>
+      <motion.ul className={css.aboutList} initial={{ opacity: 0, x: 50  }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay:  0.2 }}>
         <li className={css.aboutItem}>
           <svg className={css.aboutIcon}>
             <use href={`${svg}#icon-calendar`} />
@@ -32,8 +35,10 @@ export const About = () => {
           <p className={css.aboutText}> Працюємо з 2019 року.</p>
         </li>
         
-      </ul>
-      <div className={css.contacts}>
+      </motion.ul>
+      <motion.div className={css.contacts} initial={{ opacity: 0, y: 50  }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay:  0.2 }}>
         <a className={css.telLink} href="tel:+380950147888">
           <svg className={css.telIcon}>
             <use href={`${svg}#icon-tel`} />
@@ -51,7 +56,7 @@ export const About = () => {
           </svg>
           м. Луцьк вул. Карпенка-Карого 3
         </a>
-      </div>
+      </motion.div>
       <Socials iconStyles={{ color: 'white', width: '50px' }} />
     </section>
     </>

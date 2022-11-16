@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 //--------------------------------------------------
 export const Services = () => {
   const [activeElem, SetActiveElem] = useState(0);
-  const inital ={opacity:0}
-const animate ={opacity:1}
-const transition ={duration:1}
+  const inital = { opacity: 0 };
+  const animate = { opacity: 1 };
+  const transition = { duration: 1 };
   const ServicesList = [
     {
       id: 1,
@@ -46,21 +46,29 @@ const transition ={duration:1}
   };
 
   return (
-    <motion.section  className={css.services} initial={inital} animate={animate} transition={transition}>
-      <Header text="Роботи" location='/works' activeId={2} />
+    <motion.section
+      className={css.services}
+      initial={inital}
+      animate={animate}
+      transition={transition}
+    >
+      <Header text="Роботи" location="/works" activeId={2} />
       <div className={css.titleWrap}>
         <h2 className={css.title}>Послуги</h2>
       </div>
       <ul className={css.servicesLsit}>
         {finalServicesList.map(({ title, id }) => {
           return (
-            <li
+            <motion.li
               key={id}
               className={css.servicesItem}
               onClick={() => {
                 SetActiveElem(id);
                 onClick(id);
               }}
+              initial={{ opacity: 0, x: 50  }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay:  id * 0.2 }}
             >
               <div className={css.ItemVisible}>
                 <h4 className={css.ItemVisibleTitle}>{title}</h4>
@@ -84,8 +92,7 @@ const transition ={duration:1}
                   <div className={css.details}>
                     <p className={css.detailsPrice}>
                       Ціна послуги залежить від моделі і стану автомобіля, для
-                      консультації телефонуйте по номеру
-                       +38(095)014-78-88
+                      консультації телефонуйте по номеру +38(095)014-78-88
                       <svg className={css.priceIcon}>
                         <use href={`${svg}#icon-price`} />
                       </svg>{' '}
@@ -99,7 +106,7 @@ const transition ={duration:1}
                   </div>
                 </div>
               </div>
-            </li>
+            </motion.li>
           );
         })}
       </ul>

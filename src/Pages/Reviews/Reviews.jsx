@@ -3,10 +3,11 @@ import { fetchReviews, setReview } from 'api/fetchReviews';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Header } from 'components/Header/Header';
 import svg from '../../images/symbol-defs.svg';
 export const Reviews = () => {
   const [response, setResponse] = useState({});
-  // const [startIndex, setStartIndex] = useState(0);
+  
   const [endIndex, setEndIndex] = useState(10);
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
@@ -91,6 +92,7 @@ setTimeout(() => {
 
   return (
     <>
+<Header text='Домашня' activeId={1} location='/esthetic-garage_react'/>
       <section className={css.reviews}>
         <h2 className={css.reviewsTitle}>
           Напишіть свій відгук, або дивіться вже існуючі
@@ -161,12 +163,17 @@ setTimeout(() => {
           className={css.moreBtn}
           onClick={() => {
            if(endOfReviews){
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth',
+            });
             return
            }
             setEndIndex(endIndex + 10);
           }}
         >
-         {endOfReviews?'Це всі відгуки':'більше відгуків...'} 
+         {endOfReviews?'Це всі відгуки ↑':'більше відгуків...'} 
         </button>
         {loader && (
           <svg className={css.loader}>
