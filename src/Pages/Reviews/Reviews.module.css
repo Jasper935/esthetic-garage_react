@@ -55,9 +55,10 @@ padding: 0 10px;
   border-radius: 15px;
   margin-right: 10px;
   color: white;
-  border: none;
+  
   -webkit-box-shadow: 0 0 10px 0px #d4d7da;
   box-shadow: 0 0 10px 0px #d4d7da;
+  border: 1px solid white;
 }
 .reviewsInput:last-child {
   margin-right: 0;
@@ -70,10 +71,10 @@ padding: 0 10px;
 .reviewsInput:focus {
   border-color: transparent;
   outline-color: transparent;
+  border: 1px solid white;
   border: none;
   color: white;
-  -webkit-box-shadow: 0 0 10px 0px #d4d7da;
-  box-shadow: 0 0 10px 0px #e3e7ea;
+  
 }
 .reviewsInput:focus::placeholder {
   color: transparent;
@@ -84,7 +85,7 @@ padding: 0 10px;
   padding: 7px 0;
   margin-bottom: 25px;
   width: 310px;
-  
+  border: 1px solid white;
   color: white;
   height: 100px;
   resize: none;
