@@ -56,6 +56,7 @@ padding: 0 10px;
   margin-right: 10px;
   color: white;
   border: none;
+  -webkit-box-shadow: 0 0 10px 0px #d4d7da;
   box-shadow: 0 0 10px 0px #d4d7da;
 }
 .reviewsInput:last-child {
@@ -70,6 +71,9 @@ padding: 0 10px;
   border-color: transparent;
   outline-color: transparent;
   border: none;
+  color: white;
+  -webkit-box-shadow: 0 0 10px 0px #d4d7da;
+  box-shadow: 0 0 10px 0px #e3e7ea;
 }
 .reviewsInput:focus::placeholder {
   color: transparent;
@@ -85,6 +89,7 @@ padding: 0 10px;
   height: 100px;
   resize: none;
   border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px 0px #d4d7da;
   box-shadow: 0 0 10px 0px #e3e7ea;
   background-color: transparent;
 }
