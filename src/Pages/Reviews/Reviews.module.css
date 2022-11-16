@@ -286,7 +286,8 @@ animation-timing-function: linear;
     margin-right: 25px;
     color: white;
     border: none;
-    box-shadow: 0 0 10px 0px #d4d7da;
+    box-shadow: 0 0 3px 3px #3c3232;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .reviewsInput:last-child {
     margin: 0;
@@ -310,13 +311,13 @@ animation-timing-function: linear;
     padding: 7px 0;
     margin-right: 25px;
     width: 400px;
-    
+    border: none;
     color: white;
     height: 100px;
     resize: none;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0px #e3e7ea;
-    background-color: transparent;
+    box-shadow: 0 0 3px 3px #3c3232;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .reviewsInputText::placeholder {
     color: white;
@@ -364,7 +365,8 @@ animation-timing-function: linear;
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: 0 0 5px 2px #a5a5ac;
+    box-shadow: 0 0 3px 3px #3c3232;
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }
   .reviewsItemWrap {

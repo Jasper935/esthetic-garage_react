@@ -158,6 +158,7 @@ margin-top: 75px;
         cursor: pointer;
       }
       .contentWrap {
+        position: relative;
         height: 50px;
         display: flex;
         align-items: center;
@@ -182,7 +183,7 @@ margin-top: 75px;
       .navList {
         position: absolute;
         top: 0px;
-        left: 50%;
+        left: 25%;
         width: 700px;
         height: 50px;
         display: flex;
