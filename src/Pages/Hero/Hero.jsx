@@ -11,7 +11,7 @@ export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
-  const [messageActive, setMessageActive] = useState(false);
+  // const [messageActive, setMessageActive] = useState(false);
   const vidRef = useRef(null);
   // const openRef= useRef(false)
   
@@ -195,7 +195,7 @@ export const Hero = () => {
             onClick={() =>{ 
                setIsVideoPlay(!isVideoPlay)}}
           >
-            <p  className={css.videoText} onMouseEnter={()=>setMessageActive(true)} onMouseLeave={()=>setMessageActive(false)}>відео</p>
+            <p  className={css.videoText} >відео</p>
             <div className={css.videoBtn}>
               <div
                 className={
