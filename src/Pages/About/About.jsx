@@ -5,7 +5,7 @@ import svg from '../../images/symbol-defs.svg';
 //---------------------------------------------------
 export const About = () => {
   return (
-    <><Header text="Домашня" location={'/esthetic-garage_react'} activeId={4} />
+    <><Header text="Відгуки" location={'/reviews'} activeId={5} />
     <section className={css.about}>
       
       <h2 className={css.aboutTitle}>Про нас</h2>

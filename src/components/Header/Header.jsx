@@ -19,6 +19,7 @@ export const Header = ({ text = 'Next', location, activeId = 1 }) => {
     { title: 'Послуги', link: '/services' },
     { title: 'Роботи', link: '/works' },
     { title: 'Про нас', link: '/about' },
+    { title: 'Відгуки', link: '/reviews' },
   ];
   const contentWitchId = createId(content);
   return (

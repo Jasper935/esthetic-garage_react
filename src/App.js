@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Services } from 'Pages/Services/Services';
 import { Route, Routes } from 'react-router-dom';
+import { Reviews } from 'Pages/Reviews/Reviews';
 // import { useRef } from 'react';
 
 //-----------------------------------------------------------------------------------
@@ -40,6 +41,7 @@ export function App() {
         <Route path="works" element={<Works />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
+        <Route path="reviews" element={<Reviews />} />
         {/* <Route path='*' element={<NotFound/>}/> */}
       </Routes>
 

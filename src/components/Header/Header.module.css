@@ -68,19 +68,22 @@ border-top: none;
 padding: 0px 25px;
 cursor: pointer;
 transition: all 0.1s linear;
+width: 150px;
 }
 .navItem:hover{
     transform: scale(1.1);
     transition: all 0.1s linear;
 }
 .navLink{
+   
 color: white;
 font-size: 20px;
 font-weight: 600;
 width: 100%;
 z-index: 305;
 
-padding-left: 30px;
+/* padding-left: 30px; */
+text-align: center;
 }
 .navLinkActive{
     color: white;
@@ -88,7 +91,7 @@ padding-left: 30px;
     font-weight: 600;
     z-index: 305;
     color: #f5c946;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     }
 
 .nextBtn{
