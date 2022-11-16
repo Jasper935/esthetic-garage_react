@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { createId } from 'data/createId';
 import { useNavigate } from 'react-router-dom';
 
+
 //----------------------------------------------------------
 export const Header = ({ text = 'Next', location, activeId = 1 }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -6,13 +6,15 @@ import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Header } from 'components/Header/Header';
-import bg from '../../images/bg9.JPG';
+import bg from '../../images/bg4.JPG';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
   const [messageActive, setMessageActive] = useState(false);
   const vidRef = useRef(null);
+  // const openRef= useRef(false)
+  
   async function play(){
     if (isVideoPlay) {
       await vidRef.current.play();
@@ -26,7 +28,7 @@ export const Hero = () => {
   useEffect(() => {
     
       // setIsVideoPlay()
-      
+      // openRef.current= isVideoPlay
       localStorage.getItem('messageActive')
     play()
     return()=>{
@@ -190,7 +192,8 @@ export const Hero = () => {
           </div>
           <div
             className={css.videoSwitcher}
-            onClick={() => setIsVideoPlay(!isVideoPlay)}
+            onClick={() =>{ 
+               setIsVideoPlay(!isVideoPlay)}}
           >
             <p  className={css.videoText} onMouseEnter={()=>setMessageActive(true)} onMouseLeave={()=>setMessageActive(false)}>відео</p>
             <div className={css.videoBtn}>
@@ -200,7 +203,7 @@ export const Hero = () => {
                 }
               ></div>
             </div>
-            <p style={{opacity:messageActive&&isVideoPlay? 1: 0}} className={css.message}>Якщо у вас повільний інтернет, ви можете скоритстатися версією сторінки без відео.</p>
+            {/* <p style={{opacity:messageActive&&isVideoPlay? 1: 0}} className={css.message}>Якщо у вас повільний інтернет, ви можете скоритстатися версією сторінки без відео.</p> */}
           </div>
         </motion.div>
       </div>

@@ -14,10 +14,10 @@
   align-items: center;
   background-image: linear-gradient(
       to bottom,
-      rgba(67, 67, 70, 0.7),
+      rgba(67, 67, 70, 0.9),
       rgba(60, 50, 50, 1)
     ),
-    url('../../images/bg4.JPG');
+    url('../../images/revBg.jpg');
   background-size: cover;
 }
 .reviewsTitle {
