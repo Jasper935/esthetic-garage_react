@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import svg from '../../images/symbol-defs.svg';
 export const Reviews = () => {
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState({});
   // const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(10);
   const [name, setName] = useState('');
@@ -17,11 +17,18 @@ export const Reviews = () => {
 
 
   useEffect(() => {
-    setLoader(true);
+  // !endOfReviews&&  
+  setLoader(true);
     fetchReviews().then(res => {
+      if(res.length===response.length){
+        setEndOfReviews(true)
+        
+      }
       setResponse(
         res.reverse().filter((el, i) => i >= 0 && i < endIndex)
       );
+     
+     
       setLoader(false);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -52,10 +59,13 @@ setTimeout(() => {
     });
     setLoader(true);
     await fetchReviews().then(res => {
+      console.log();
+      
       setResponse(
         res.reverse().filter((e, i) => i >= 0 && i < endIndex)
       );
       setLoader(false);
+      
     });
     setName('');
     setMessage('');
@@ -150,7 +160,9 @@ setTimeout(() => {
         <button
           className={css.moreBtn}
           onClick={() => {
-            // setStartIndex(startIndex+10)
+           if(endOfReviews){
+            return
+           }
             setEndIndex(endIndex + 10);
           }}
         >
