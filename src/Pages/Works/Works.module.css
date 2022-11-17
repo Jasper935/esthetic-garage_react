@@ -3,7 +3,7 @@
     position: relative;
     width: 100vw;
 height: 100vh;
-    padding: 60px 0;
+    padding: 35px 0;
 
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ height: 100vh;
   .worksTitle {
     color: white;
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
    
   }
   .swiperWrap {
@@ -42,25 +42,27 @@ height: 100vh;
   .worksSocials {
     
     position: absolute;
-    top: 1px;
+    top: -125px;
     right: 50%;
     transform: translateX(50%);
     z-index: 300;
-    width: 850px;
+    width: 100%;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(37, 35, 35, 0.9);
-    display: none;
-    padding: 10px;
-    padding-top: 15px;
-    border-radius: 0 0 15px 15px;
+    
+    padding: 15px;
+    /* margin-bottom: 25px; */
   }
   .worksSocialsTitle {
     color: white;
+    font-size: 12px;
     margin-right: 40px;
     font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
   }
  
   .swiper {
