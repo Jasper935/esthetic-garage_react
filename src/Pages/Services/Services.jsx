@@ -10,7 +10,7 @@ export const Services = () => {
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
   const transition = { duration: 1 };
-  
+
   const ServicesList = [
     {
       id: 1,
@@ -204,64 +204,60 @@ export const Services = () => {
         {finalServicesList.map(
           ({ title, id, price, text, time, descrPrice, type }, i) => {
             return (
-              
-                
-                <motion.li
-                  
-                  className={css.servicesItem}
-                  onClick={() => {
-                    SetActiveElem(id);
-                    onClick(id);
-                  }}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.2 }}
-                  key={id}
-                >
-                  <div className={css.ItemVisible}>
-                    <h4 className={css.ItemVisibleTitle}>{title}</h4>
-                    <svg
-                      className={
-                        activeElem === id ? css.arrowIconOpen : css.arrowIcon
-                      }
-                    >
-                      <use href={`${svg}#icon-arrow`} />
-                    </svg>
-                  </div>
-                  <div
+              <motion.li
+                className={css.servicesItem}
+                onClick={() => {
+                  SetActiveElem(id);
+                  onClick(id);
+                }}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.2 }}
+                key={id}
+              >
+                <div className={css.ItemVisible}>
+                  <h4 className={css.ItemVisibleTitle}>{title}</h4>
+                  <svg
                     className={
-                      activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
+                      activeElem === id ? css.arrowIconOpen : css.arrowIcon
                     }
                   >
-                    <div className={css.hiddenLeft}>
-                      <p
-                        className={
-                          activeElem === id ? css.leftTextActive : css.leftText
-                        }
-                      >
-                        {text}
+                    <use href={`${svg}#icon-arrow`} />
+                  </svg>
+                </div>
+                <div
+                  className={
+                    activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
+                  }
+                >
+                  <div className={css.hiddenLeft}>
+                    <p
+                      className={
+                        activeElem === id ? css.leftTextActive : css.leftText
+                      }
+                    >
+                      {text}
+                    </p>
+                  </div>
+                  <div className={css.hiddenRight}>
+                    <div className={css.details}>
+                      <p className={css.detailsPrice}>
+                        {price} | {descrPrice && descrPrice} Для консультації
+                        телефонуйте по номеру +38(095)014-78-88
+                        <svg className={css.priceIcon}>
+                          <use href={`${svg}#icon-price`} />
+                        </svg>{' '}
+                      </p>
+                      <p className={css.detailsTime}>
+                        {time}
+                        <svg className={css.timeIcon}>
+                          <use href={`${svg}#icon-time2`} />
+                        </svg>{' '}
                       </p>
                     </div>
-                    <div className={css.hiddenRight}>
-                      <div className={css.details}>
-                        <p className={css.detailsPrice}>
-                          {price} | {descrPrice && descrPrice} Для консультації
-                          телефонуйте по номеру +38(095)014-78-88
-                          <svg className={css.priceIcon}>
-                            <use href={`${svg}#icon-price`} />
-                          </svg>{' '}
-                        </p>
-                        <p className={css.detailsTime}>
-                          {time}
-                          <svg className={css.timeIcon}>
-                            <use href={`${svg}#icon-time2`} />
-                          </svg>{' '}
-                        </p>
-                      </div>
-                    </div>
                   </div>
-                </motion.li>
-              
+                </div>
+              </motion.li>
             );
           }
         )}
