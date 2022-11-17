@@ -19,7 +19,7 @@ export const Works = () => {
     <><Header text='Про нас' activeId={3} location='/about'/>
     <motion.section className={css.works} initial={inital} animate={animate} transition={transition}>
       
-      <h2 className={css.worksTitle}>Наші роботи</h2>
+      <h2 className={css.worksTitle}>Виконані роботи</h2>
       <div className={css.swiperWrap}>
         <button
           className={css.swiperBtnPrev}
@@ -55,9 +55,7 @@ export const Works = () => {
             delay: 2500,
             disableOnInteraction: true,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={}
           navigation={true}
           modules={[Autoplay, Pagination]}
           loop
