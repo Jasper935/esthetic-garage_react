@@ -1,104 +1,205 @@
-.about{
-width: 100vw;
-height: 100vh;
-background-image: linear-gradient(
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(67, 67, 70, 0.7),
+            rgba(60, 50, 50, 0.9)
+          ), url('../../images/bg9.JPG');
+    
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+    }
+    .aboutTitle{
+      
+      color: white;
+      font-size: 50px;
+      margin-bottom: 100px;
+      padding-left: 50px;
+    }
+    
+    
+    .contacts{
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 75;
+      font-size: 25px;
+      margin: 75px 0;
+    }
+    
+    .telLink{
+      font-family:  monospace;
+      
+      
+      padding: 5px 3px;
+      color: white;
+      font-weight: 700;
+      /* width: 400px; */
+      
+     
+      text-align: center;
+      display: flex;
+      align-items: center;
+      
+    }
+    .telIcon{
+      width: 30px;
+      height: 30px;
+      fill: white;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .location{
+      padding: 5px 10px;
+      color: white;
+      font-weight: 700;
+      
+     
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+    .locIcon{
+      width: 30px;
+      height: 30px;
+      fill: white;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+      /* //---------------------------------------------------- */
+    
+      .aboutList{
+        color: white;
+        font-size: 20px;
+        display: flex;
+      }
+    .aboutItem{
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: baseline;
+      width: 250px;
+      
+    }
+    .aboutItem:nth-child(2){
+      width: 300px;
+    }
+    .aboutIcon{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    }
+    .aboutItemTitle{
+    margin-bottom: 15px;
+    }
+    .aboutText{
+      
+      text-align: center;
+    }
+}
+/* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .about {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
         to bottom,
         rgba(67, 67, 70, 0.7),
         rgba(60, 50, 50, 0.9)
-      ), url('../../images/bg9.JPG');
+      ),
+      url('../../images/bg9.JPG');
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-}
-.aboutTitle{
-  
-  color: white;
-  font-size: 50px;
-  margin-bottom: 100px;
-  padding-left: 50px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutTitle {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+  }
 
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 75;
+    font-size: 25px;
+    margin: 75px 0;
+  }
 
-.contacts{
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 75;
-  font-size: 25px;
-  margin: 75px 0;
-}
+  .telLink {
+    font-family: monospace;
 
-.telLink{
-  font-family:  monospace;
-  
-  
-  padding: 5px 3px;
-  color: white;
-  font-weight: 700;
-  /* width: 400px; */
-  
- 
-  text-align: center;
-  display: flex;
-  align-items: center;
-  
-}
-.telIcon{
-  width: 30px;
-  height: 30px;
-  fill: white;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.location{
-  padding: 5px 10px;
-  color: white;
-  font-weight: 700;
-  
- 
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-.locIcon{
-  width: 30px;
-  height: 30px;
-  fill: white;
-  margin-right: 10px;
-  margin-left: 10px;
-}
+    padding: 5px 3px;
+    color: white;
+    font-weight: 700;
+    /* width: 400px; */
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .telIcon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .location {
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .locIcon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   /* //---------------------------------------------------- */
 
-  .aboutList{
+  .aboutList {
     color: white;
     font-size: 20px;
     display: flex;
   }
-.aboutItem{
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: baseline;
-  width: 250px;
-  
-}
-.aboutItem:nth-child(2){
-  width: 300px;
-}
-.aboutIcon{
-fill: white;
-width: 50px;
-height: 50px;
-margin-bottom: 15px;
-}
-.aboutItemTitle{
-margin-bottom: 15px;
-}
-.aboutText{
-  
-  text-align: center;
+  .aboutItem {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 250px;
+  }
+  .aboutItem:nth-child(2) {
+    width: 300px;
+  }
+  .aboutIcon {
+    fill: white;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .aboutItemTitle {
+    margin-bottom: 15px;
+  }
+  .aboutText {
+    text-align: center;
+  }
 }
