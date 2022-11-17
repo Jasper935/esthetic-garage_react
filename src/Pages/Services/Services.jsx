@@ -10,6 +10,7 @@ export const Services = () => {
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
   const transition = { duration: 1 };
+  
   const ServicesList = [
     {
       id: 1,
@@ -24,7 +25,6 @@ export const Services = () => {
       text: 'Повернемо блиск та насиченість кольору. Очистимо кузов від металічних вкраплень та бітуму.',
       price: 'Від 130$',
       time: ' Час виконання 1-2 доби ',
-      
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export const Services = () => {
       text: 'Найефективніший захист лакофарбового покриття. Надійно від сколів та подряпин. Збереже стан нового автомобіля на десятки років. Захищаємо як окремі деталі, так і весь автомобіль.',
       price: '',
       time: 'Час виконання залежить від об‘єму робіт',
-      descrPrice: 'Залежить від розмірів та геометрії кузова'
+      descrPrice: 'Залежить від розмірів та геометрії кузова',
     },
     {
       id: 5,
@@ -104,7 +104,6 @@ export const Services = () => {
       text: 'Глянцеві елементи часто дуже чутливі до появи подряпин. Повернемо естетичний вигляд даним деталям.',
       price: 'Від 200 грн',
       time: 'Час на виконання 4-8 год',
-     
     },
     {
       id: 7,
@@ -183,7 +182,6 @@ export const Services = () => {
       price: 'Від 500 грн',
       time: 'Час на виконання 1-2 год',
     },
-    
   ];
 
   const finalServicesList = createId(ServicesList);
@@ -203,61 +201,70 @@ export const Services = () => {
         <h2 className={css.title}>Послуги, які ми надаємо.</h2>
       </div>
       <ul className={css.servicesLsit}>
-        {finalServicesList.map(({ title, id, price,text, time, descrPrice, type }, i) => {
-          return (
-            <>
-              {type && <h3 className={css.typeTitle}>{type}</h3>}
-              <motion.li
-                key={id}
-                className={css.servicesItem}
-                onClick={() => {
-                  SetActiveElem(id);
-                  onClick(id);
-                }}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.2 }}
-              >
-                <div className={css.ItemVisible}>
-                  <h4 className={css.ItemVisibleTitle}>{title}</h4>
-                  <svg
+        {finalServicesList.map(
+          ({ title, id, price, text, time, descrPrice, type }, i) => {
+            return (
+              
+                
+                <motion.li
+                  
+                  className={css.servicesItem}
+                  onClick={() => {
+                    SetActiveElem(id);
+                    onClick(id);
+                  }}
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.2 }}
+                  key={id}
+                >
+                  <div className={css.ItemVisible}>
+                    <h4 className={css.ItemVisibleTitle}>{title}</h4>
+                    <svg
+                      className={
+                        activeElem === id ? css.arrowIconOpen : css.arrowIcon
+                      }
+                    >
+                      <use href={`${svg}#icon-arrow`} />
+                    </svg>
+                  </div>
+                  <div
                     className={
-                      activeElem === id ? css.arrowIconOpen : css.arrowIcon
+                      activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
                     }
                   >
-                    <use href={`${svg}#icon-arrow`} />
-                  </svg>
-                </div>
-                <div
-                  className={
-                    activeElem === id ? css.ItemHiddenOpen : css.ItemHidden
-                  }
-                >
-                  <div className={css.hiddenLeft}>
-                    <p className={css.leftText}>{text}</p>
-                  </div>
-                  <div className={css.hiddenRight}>
-                    <div className={css.details}>
-                      <p className={css.detailsPrice}>
-                        {price} | {descrPrice&&descrPrice} Для консультації телефонуйте по номеру
-                        +38(095)014-78-88
-                        <svg className={css.priceIcon}>
-                          <use href={`${svg}#icon-price`} />
-                        </svg>{' '}
-                      </p>
-                      <p className={css.detailsTime}>
-                        {time}
-                        <svg className={css.timeIcon}>
-                          <use href={`${svg}#icon-time2`} />
-                        </svg>{' '}
+                    <div className={css.hiddenLeft}>
+                      <p
+                        className={
+                          activeElem === id ? css.leftTextActive : css.leftText
+                        }
+                      >
+                        {text}
                       </p>
                     </div>
+                    <div className={css.hiddenRight}>
+                      <div className={css.details}>
+                        <p className={css.detailsPrice}>
+                          {price} | {descrPrice && descrPrice} Для консультації
+                          телефонуйте по номеру +38(095)014-78-88
+                          <svg className={css.priceIcon}>
+                            <use href={`${svg}#icon-price`} />
+                          </svg>{' '}
+                        </p>
+                        <p className={css.detailsTime}>
+                          {time}
+                          <svg className={css.timeIcon}>
+                            <use href={`${svg}#icon-time2`} />
+                          </svg>{' '}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </motion.li>
-            </>
-          );
-        })}
+                </motion.li>
+              
+            );
+          }
+        )}
       </ul>
     </motion.section>
   );
