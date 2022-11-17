@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 //----------------------------------------------------------
 export const Header = ({ text = 'Next', location, activeId = 1 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const navigate = useNavigate();
  const screenWidth =window.screen.width

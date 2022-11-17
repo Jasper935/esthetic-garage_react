@@ -30,6 +30,12 @@
   color: white;
   font-size: 50px;
 }
+.typeTitle{
+  color: rgb(170, 161, 161);
+  font-size: 35px;
+  margin-top: 15px;
+  text-align: center;
+}
 .servicesLsit {
   /* margin-top: -75px; */
   width: 1100px;
@@ -153,7 +159,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  width: 150px;
+  width: 140px;
 }
 .priceIcon {
   position: absolute;

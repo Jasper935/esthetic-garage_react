@@ -19,7 +19,7 @@
       rgba(106, 93, 93, 0.9)
     ),
     url('../../images/revBg.jpg');
-  background-size: cover;
+  /* background-size: cover; */
   background-attachment: fixed;
 }
 .reviewsTitle {

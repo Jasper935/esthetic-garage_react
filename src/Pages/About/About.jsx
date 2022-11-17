@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 //---------------------------------------------------
 export const About = () => {
   return (
-    <><Header text="Відгуки" location={'/reviews'} activeId={5} />
+    <><Header text="Відгуки" location={'/reviews'} activeId={4} />
     <section className={css.about}>
       
       <h2 className={css.aboutTitle}>Про нас</h2>

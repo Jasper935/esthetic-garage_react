@@ -6,7 +6,7 @@ import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Header } from 'components/Header/Header';
-import bg from '../../images/bg4.JPG';
+import bg from '../../images/bg9.JPG';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
