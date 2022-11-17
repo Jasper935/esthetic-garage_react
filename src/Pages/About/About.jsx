@@ -57,7 +57,7 @@ export const About = () => {
           м. Луцьк вул. Карпенка-Карого 3
         </a>
       </motion.div>
-      <Socials iconStyles={{ color: 'white', width: '50px' }} />
+      <Socials iconStyles={{ color: 'white', width: window.screen.width>767? '50px':'30px' }} />
     </section>
     </>
   );
