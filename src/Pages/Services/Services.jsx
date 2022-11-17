@@ -32,7 +32,7 @@ export const Services = () => {
       text: 'Неймовірний ефект мокрого блиску, насичений колір та перелив на світлі. Сильний гідрофобний ефект. Захист діє до 2 років і довше.',
       price: 'Від 250$',
       time: 'Час виконання 2-3 доби ',
-      type:'Захист екстер‘єру:',
+      // type:'Захист екстер‘єру:',
     },
     {
       id: 4,
@@ -200,7 +200,7 @@ export const Services = () => {
     >
       <Header text="Роботи" location="/works" activeId={2} />
       <div className={css.titleWrap}>
-        <h2 className={css.title}>Послуги</h2>
+        <h2 className={css.title}>Послуги, які ми надаємо.</h2>
       </div>
       <ul className={css.servicesLsit}>
         {finalServicesList.map(({ title, id, price,text, time, descrPrice, type }, i) => {
