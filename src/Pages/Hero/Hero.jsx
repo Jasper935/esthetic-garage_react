@@ -194,7 +194,7 @@ export const Hero = () => {
                 </motion.p>
               </div>
             </div>
-            <div className={css.contacts}>
+            <div className={css.contacts} style={window.screen.width < 768&&activeText?{display:'none'}:{}}>
               <a className={css.telLink} href="tel:+380950147888">
                 <svg className={css.telIcon}>
                   <use href={`${svg}#icon-tel`} />

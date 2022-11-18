@@ -30,9 +30,14 @@
     height: 100vh;
     background-size: cover;
      z-index: 1;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     background-size: cover;
     width: auto;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(67, 67, 70, 0.7),
+      rgba(60, 50, 50, 1)
+    );
     
   }
   
@@ -46,16 +51,16 @@
     z-index: 5;
   }
   .logo {
-    display: none;
+    
     position: absolute;
-    width: 550px;
+    width: 70%;
     top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
+   left: 50%;
+    transform: translateX(-50%);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
-    opacity: 0.7;
+    opacity: 0.9;
     
    
   }
@@ -103,7 +108,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    
+    background-color: rgba(83, 72, 74, 0.5);
     
   }
   .leftSideItem {
@@ -224,10 +229,10 @@
   
   .contacts{
     position: absolute;
-    bottom:-100px;
+    bottom:-300px;
     right: 0px;
     display: flex;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
