@@ -191,14 +191,14 @@
   transition: all 0.4s linear;
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .rightSide_active::before{
     content: '';
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 102%;
     height: 100vh;
     background-color: rgba(41, 39, 39, 0.9);
   }
