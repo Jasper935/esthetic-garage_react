@@ -6,7 +6,7 @@
     width: 100vw;
     height: 50px;
     box-shadow: 0 0 10px 0 #585454;
-overflow: hidden;
+/* overflow: hidden; */
     background-color: rgba(0, 0, 0, 0.1);
     
   }
@@ -22,7 +22,7 @@ overflow: hidden;
   .logo {
     padding-left: 15px;
     width: 156px;
-    margin: -20px;
+    margin: -22px;
     height: 95px;
     cursor: pointer;
     z-index: 350;
@@ -65,7 +65,7 @@ overflow: hidden;
     justify-content: center;
 
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 300;
+    z-index: 400;
     
   }
   .navItem {
