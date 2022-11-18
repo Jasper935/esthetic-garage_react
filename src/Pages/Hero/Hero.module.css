@@ -228,7 +228,7 @@
   
   .contacts{
     position: absolute;
-    bottom:-300px;
+    bottom:-350px;
     right: 0px;
     display: flex;
     /* display: none; */
@@ -242,7 +242,7 @@
   
   .telLink{
     font-family:  monospace;
-    font-size: 15px;
+    font-size: 18px;
     
     padding: 5px 3px;
     color: white;
@@ -256,15 +256,15 @@
     
   }
   .telIcon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     fill: white;
     margin-right: 10px;
     margin-left: 10px;
   }
   .location{
     /* font-family:  monospace; */
-    font-size: 15px;
+    font-size: 18px;
     
     padding: 5px 10px;
     color: white;
@@ -277,8 +277,8 @@
     align-items: center;
   }
   .locIcon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     fill: white;
     margin-right: 10px;
     margin-left: 10px;
