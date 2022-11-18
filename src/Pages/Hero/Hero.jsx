@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import css from './Hero.module.css';
 import video from '../../video/video_last.mp4';
+import videoMob from '../../video/IMG_4317.mp4';
 import logo from '../../images/logo3.png';
 import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
@@ -96,7 +97,7 @@ export const Hero = () => {
       >
         {isVideoPlay ? (
           <video
-            src={video}
+            src={window.screen.width < 768?videoMob:video}
             ref={vidRef}
             type="video/mp4"
             className={css.video}
