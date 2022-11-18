@@ -8,8 +8,8 @@ import { useState } from 'react';
 import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
 export const Hero = () => {
-  const [logoUp, setLogoUp] = useState(false);
-  const [activeText, setActiveText] = useState(0);
+  const [logoUp, setLogoUp] = useState(true);
+  const [activeText, setActiveText] = useState(1);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
   
   const vidRef = useRef(null);
