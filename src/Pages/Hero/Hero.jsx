@@ -104,7 +104,7 @@ export const Hero = () => {
             muted
             loop
             onLoad={() => play()}
-          />
+          ></video>
         ) : (
           <img
             src={window.screen.width < 768 ? bgMobile : bg}
