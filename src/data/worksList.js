@@ -33,6 +33,37 @@ import ph31 from '../images/works/P1040935.jpg';
 import ph32 from '../images/works/P1040939.jpg';
 import ph33 from '../images/works/P1040941.jpg';
 import ph34 from '../images/works/P1040944.jpg';
+import ph35 from '../images/works/P1040953.jpg';
+import ph36 from '../images/works/P1040956.jpg';
+import ph37 from '../images/works/P1040963.jpg';
+import ph38 from '../images/works/P1040969.jpg';
+import ph39 from '../images/works/P1040984.jpg';
+import ph40 from '../images/works/P1040987.jpg';
+import ph41 from '../images/works/P1050498.jpg';
+import ph42 from '../images/works/P1050500.jpg';
+import ph43 from '../images/works/P1050501.jpg';
+import ph44 from '../images/works/P1050515.jpg';
+import ph45 from '../images/works/P1050520.jpg';
+import ph46 from '../images/works/P1050524.jpg';
+import ph47 from '../images/works/P1050530.jpg';
+import ph48 from '../images/works/P1050536.jpg';
+import ph49 from '../images/works/P1050571.jpg';
+import ph50 from '../images/works/P1050576.jpg';
+import ph51 from '../images/works/P1050583.jpg';
+import ph52 from '../images/works/P1050590.jpg';
+import ph53 from '../images/works/P1050594.jpg';
+import ph54 from '../images/works/P1050596.jpg';
+import ph55 from '../images/works/P1050598.jpg';
+import ph56 from '../images/works/P1070392.jpg';
+import ph57 from '../images/works/P1070395.jpg';
+import ph58 from '../images/works/P1070396.jpg';
+import ph59 from '../images/works/P1070399.jpg';
+import ph60 from '../images/works/P1070401.jpg';
+import ph61 from '../images/works/P1110479.jpg';
+import ph62 from '../images/works/P1110483.jpg';
+import ph63 from '../images/works/P1110490.jpg';
+import ph64 from '../images/works/P1110496.jpg';
+
 
 export const worksPhotos = [ph1,ph2,  ph4, ph5, ph6, ph7, ph8, ph9,
     ph10,
@@ -59,4 +90,34 @@ export const worksPhotos = [ph1,ph2,  ph4, ph5, ph6, ph7, ph8, ph9,
     ph31, 
     ph32,
     ph33,
-    ph34];
+    ph34, 
+    ph35,
+    ph36,
+    ph37,
+    ph38,
+    ph39,
+    ph40,
+    ph41,
+    ph42,
+    ph43,
+    ph44,
+    ph45,
+    ph46,
+    ph47,
+    ph48,
+    ph49,
+    ph50,
+    ph51,
+    ph52,
+    ph53,
+    ph54,
+    ph55,
+    ph56,
+    ph57,
+    ph58,
+    ph59,
+    ph60,
+    ph61,
+    ph62,
+    ph63,
+    ph64];
