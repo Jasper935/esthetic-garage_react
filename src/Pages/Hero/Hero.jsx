@@ -9,7 +9,7 @@ import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
 import bgMobile from '../../images/heroBgMob.JPG';
 export const Hero = () => {
-  // const [logoUp, setLogoUp] = useState(false);
+  
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
 
@@ -132,11 +132,11 @@ export const Hero = () => {
                     <motion.li
                     className={css.leftSideItem}
                       onMouseEnter={() => {
-                        // setLogoUp(true);
+                       
                         setActiveText(id);
                       }}
                       onMouseLeave={() => {
-                        // setLogoUp(false);
+                        
                         setActiveText(0);
                       }}
                       onClick={() => {
@@ -145,7 +145,7 @@ export const Hero = () => {
                         }
                         if (activeText===id) {
                           setActiveText(0)
-                          // setLogoUp(!logoUp)
+                          
                         } else{
                           setActiveText(id);
                         }
@@ -171,11 +171,11 @@ export const Hero = () => {
               <div
                 className={activeText ? css.rightSide_active : css.rightSide}
                 onMouseEnter={() => {
-                  // setLogoUp(true);
+                  
                   setActiveText(activeText);
                 }}
                 onMouseLeave={() => {
-                  // setLogoUp(false);
+                 
                   setActiveText(0);
                 }}
               >
@@ -227,7 +227,7 @@ export const Hero = () => {
                   }
                 ></div>
               </div>
-              {/* <p style={{opacity:messageActive&&isVideoPlay? 1: 0}} className={css.message}>Якщо у вас повільний інтернет, ви можете скоритстатися версією сторінки без відео.</p> */}
+              
             </div>
           </motion.div>
         </div>
