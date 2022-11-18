@@ -184,7 +184,7 @@
     height: 180%;
     width: 100%;
     
-    background-color: rgba(41, 39, 39, 1);
+    background-color: rgba(41, 39, 39, 0.9);
     z-index: -1;
     transition: all 0.4s ease-in-out;
     transition-delay: 150ms;
