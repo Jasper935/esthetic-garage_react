@@ -6,7 +6,7 @@
     width: 100vw;
     height: 50px;
     box-shadow: 0 0 10px 0 #585454;
-
+overflow: hidden;
     background-color: rgba(0, 0, 0, 0.1);
     
   }
@@ -26,6 +26,7 @@
     height: 95px;
     cursor: pointer;
     z-index: 350;
+    
   }
   .contentWrap {
     height: 50px;

@@ -133,11 +133,15 @@ export const Hero = () => {
                     <motion.li
                     className={css.leftSideItem}
                       onMouseEnter={() => {
-                       
+                        if(window.screen.width < 768 ){
+                          return
+                        }
                         setActiveText(id);
                       }}
                       onMouseLeave={() => {
-                        
+                        if(window.screen.width < 768 ){
+                          return
+                        }
                         setActiveText(0);
                       }}
                       onClick={() => {
