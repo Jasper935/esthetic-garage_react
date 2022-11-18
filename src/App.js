@@ -1,28 +1,29 @@
 import './index.css'
 import './App.css';
-// import { Header } from 'components/Header/Header';
+import { NotFound } from 'Pages/NotFound/NotFound';
 import { Hero } from 'Pages/Hero/Hero';
 import { Works } from 'Pages/Works/Works';
-// import { Modal } from 'components/Modal/Modal';
+
 import { About } from 'Pages/About/About';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Services } from 'Pages/Services/Services';
 import { Route, Routes } from 'react-router-dom';
 import { Reviews } from 'Pages/Reviews/Reviews';
-// import { useRef } from 'react';
+
 
 //-----------------------------------------------------------------------------------
 export function App() {
   const [yOffset, SetYOffset] = useState(0)
-  // const myRef =useRef()
+
+  
 
 
 
 
   const onScroll = (e) => {
     SetYOffset(e.currentTarget.pageYOffset)
-    // console.log(e);
+    
   }
 
   useEffect(() => {
@@ -36,21 +37,17 @@ export function App() {
     <div className='backdrop' >
       
       <Routes>
-      {/* <Route index path="/header" element={<Header />} /> */}
+      
         <Route index path='esthetic-garage_react'  element={<Hero />} />
         <Route path="works" element={<Works />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
         <Route path="reviews" element={<Reviews />} />
-        {/* <Route path='*' element={<NotFound/>}/> */}
+        <Route path='*' element={<NotFound/>}/>
+        
       </Routes>
 
 
-
-
-
-
-      {/* <Modal/> */}
     </div>
   );
 }
