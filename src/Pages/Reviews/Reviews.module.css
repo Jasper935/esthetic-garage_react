@@ -312,6 +312,7 @@ animation-timing-function: linear;
     margin-right: 25px;
     width: 400px;
     border: none;
+    outline: none;
     color: white;
     height: 100px;
     resize: none;
