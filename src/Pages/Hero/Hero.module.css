@@ -29,17 +29,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
      z-index: 1;
     /* opacity: 0.3; */
     background-size: cover;
     width: auto;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(67, 67, 70, 0.7),
-      rgba(60, 50, 50, 1)
-    );
+    
     
   }
   
@@ -101,6 +97,7 @@
     align-items: center;
     justify-content: center;
     z-index: 50;
+    
 
   }
   .leftSideList {
@@ -109,8 +106,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    background-color: rgba(83, 72, 74, 0.5);
+    width: 102%;
+    background-color: rgba(83, 72, 74, 0.98);
     
   }
   .leftSideItem {
