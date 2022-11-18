@@ -4,36 +4,23 @@
     position: relative;
     
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     
-    overflow: hidden;
+    
+    /* overflow: hidden; */
     background-color: transparent;
     background-attachment: fixed;
   }
-  .pauseBtn {
-    position: fixed;
-    top: 5px;
-    right: 15px;
-    width: 45px;
-    height: 45px;
-    z-index: 101;
-    border: none;
-    background-color: transparent;
-  }
-  .pauseIcon {
-    fill: white;
-    width: 35px;
-    height: 35px;
-  }
+ 
+ 
   .video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    height: 100%;
     background-size: cover;
      z-index: 1;
     opacity: 0.3;
@@ -45,11 +32,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 1150px;
+    width: 100%;
     height: 100%;
     z-index: 5;
   }
   .logo {
+    display: none;
     position: absolute;
     width: 550px;
     top: 50%;
@@ -62,7 +50,7 @@
     
    
   }
-  .logoUp {
+  /* .logoUp {
     position: absolute;
     width: 700px;
     top: 110px;
@@ -71,31 +59,32 @@
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
-  }
+  } */
   .leftSide {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 635px;
-    right: 57%;
-    top: 15%;
+    height: 30%;
+    left: 0;
+    top: 100px;
     transform: translateY(-50%);
     
     z-index: 10;
     
-    background-color: rgba(161, 141, 146, 0.7);
-    /* border-radius: 0 15px 15px 0; */
+    /* background-color: rgba(161, 141, 146, 0.7); */
+    
   }
   .leftSideContent {
-    width: 500px;
+    width: 100%;
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 50;
+
   }
   .leftSideList {
     display: flex;
@@ -104,14 +93,22 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    
   }
   .leftSideItem {
     position: relative;
-    padding: 25px 0;
-    padding-left: 75px;
-    /* width: 425px; */
+    padding: 15px 0;
+    padding-left: 40px;
+   padding-right: 50px;
     width: 100%;
+    height: auto;
     transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid wheat;
+
+    background-color: rgba(67, 53, 57, 0.7);
+  }
+  .leftSideItem:first-child{
+    border-top: 2px solid wheat;
   }
   .leftSideItem:hover {
     /* padding: 10px;  */
@@ -122,10 +119,10 @@
   .arrowIcon {
     position: absolute;
     top: 50%;
-    left: 25px;
-    transform: translateY(-50%) rotate(180deg);
-    width: 35px;
-    height: 35px;
+    left: 15px;
+    transform: translateY(-50%) rotate(90deg);
+    width: 25px;
+    height: 25px;
     fill: #c4be97;
     transition: all 0.3s ease-in-out;
   }
@@ -134,10 +131,10 @@
     top: 50%;
     left: 25px;
     
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     fill: rgb(199, 37, 37);
-    transform: translateY(-50%) rotate(90deg) ;
+    transform: translateY(-50%) rotate(180deg) ;
     transition: all 0.4s ease-in-out;
     animation-name: hiddenText;
   
@@ -146,7 +143,7 @@
   }
   .leftSideTitle {
     color: white;
-    font-size: 48px;
+    font-size: 20px;
     opacity: 0.8;
     width: 425px;
     transition: all 0.4s ease-in-out;
@@ -165,7 +162,7 @@
     right: -12px;
     height: 100%;
     width: 520px;
-    background-color: rgb(60, 50, 50);
+    background-color: transparent;
     z-index: -5;
     transition: all 0.3s ease-in-out;
     border-radius: 0 30px 30px 0;

@@ -11,9 +11,9 @@ export const Hero = () => {
   const [logoUp, setLogoUp] = useState(false);
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
-  // const [messageActive, setMessageActive] = useState(false);
+  
   const vidRef = useRef(null);
-  // const openRef= useRef(false)
+ 
   
   async function play(){
     if (isVideoPlay) {
@@ -26,16 +26,13 @@ export const Hero = () => {
    const animate ={opacity:1}
    const transition ={duration:0.5}
   useEffect(() => {
-    
-      // setIsVideoPlay()
-      // openRef.current= isVideoPlay
-      localStorage.getItem('messageActive')
+  
+      
     play()
-    return()=>{
-      localStorage.setItem('video', isVideoPlay)
-    }
+    
+  
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isVideoPlay]);
+  }, []);
 
   const content = [
     {
