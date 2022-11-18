@@ -25,7 +25,7 @@
     margin: -22px;
     height: 95px;
     cursor: pointer;
-    z-index: 350;
+    z-index: 410;
     
   }
   .contentWrap {
@@ -44,7 +44,8 @@
     height: 100%;
     cursor: pointer;
     border: none;
-    z-index: 300;
+    
+    z-index: 410;
   }
   .burger {
     fill: white;
@@ -114,7 +115,7 @@ margin-top: 75px;
     font-size: 15px;
     cursor: pointer;
     transition: all 0.3s linear;
-    z-index: 350;
+    z-index: 410;
   }
   .nextBtn:hover {
     color: wheat;
