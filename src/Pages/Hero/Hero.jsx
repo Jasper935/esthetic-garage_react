@@ -17,9 +17,14 @@ export const Hero = () => {
   const vidRef = useRef(null);
 
   async function play() {
-    if (isVideoPlay) {
-      await vidRef.current.play();
-    }
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      return
+    } else {
+      if (isVideoPlay) {
+        await vidRef.current.play();
+      }
+  }
+    
   }
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
