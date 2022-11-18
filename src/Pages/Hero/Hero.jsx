@@ -9,8 +9,8 @@ import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
 import bgMobile from '../../images/heroBgMob.JPG';
 export const Hero = () => {
-  const [logoUp, setLogoUp] = useState(true);
-  const [activeText, setActiveText] = useState(1);
+  // const [logoUp, setLogoUp] = useState(false);
+  const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
 
   const vidRef = useRef(null);
@@ -113,7 +113,7 @@ export const Hero = () => {
         )}
         <div className={css.heroWrap}>
           <img
-            className={logoUp ? css.logoUp : css.logo}
+            className={activeText ? css.logoUp : css.logo}
             src={logo}
             alt="logo"
           />
@@ -123,22 +123,35 @@ export const Hero = () => {
             initial={{ x: '-100%' }}
             animate={{ x: '0' }}
             transition={{ delay: 0.2, duration: 1 }}
-            style={!logoUp && { borderRadius: ' 0 30px 30px 0' }}
+            style={!activeText && { borderRadius: ' 0 30px 30px 0' }}
           >
             <div className={css.leftSideContent}>
               <ul className={css.leftSideList}>
                 {content.map(({ id, title }) => {
                   return (
                     <motion.li
+                    className={css.leftSideItem}
                       onMouseEnter={() => {
-                        setLogoUp(true);
+                        // setLogoUp(true);
                         setActiveText(id);
                       }}
                       onMouseLeave={() => {
-                        setLogoUp(false);
+                        // setLogoUp(false);
                         setActiveText(0);
                       }}
-                      className={css.leftSideItem}
+                      onClick={() => {
+                        if(window.screen.width >= 768 ){
+                          return
+                        }
+                        if (activeText===id) {
+                          setActiveText(0)
+                          // setLogoUp(!logoUp)
+                        } else{
+                          setActiveText(id);
+                        }
+                        
+                      }}
+                      
                       key={id}
                     >
                       <svg
@@ -156,13 +169,13 @@ export const Hero = () => {
                 })}
               </ul>
               <div
-                className={logoUp ? css.rightSide_active : css.rightSide}
+                className={activeText ? css.rightSide_active : css.rightSide}
                 onMouseEnter={() => {
-                  setLogoUp(true);
+                  // setLogoUp(true);
                   setActiveText(activeText);
                 }}
                 onMouseLeave={() => {
-                  setLogoUp(false);
+                  // setLogoUp(false);
                   setActiveText(0);
                 }}
               >

@@ -176,9 +176,9 @@
   }
   .rightSide_active {
     position: absolute;
-    bottom: -180%;
+    bottom: -425px;
     right: 0;
-    height: 180%;
+    height: 425px;
     width: 100%;
     
     background-color: rgba(41, 39, 39, 0.9);
