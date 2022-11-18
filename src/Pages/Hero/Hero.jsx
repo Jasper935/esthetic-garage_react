@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
+import bgMobile from '../../images/heroBgMob.JPG';
 export const Hero = () => {
   const [logoUp, setLogoUp] = useState(true);
   const [activeText, setActiveText] = useState(1);
@@ -102,7 +103,7 @@ export const Hero = () => {
           onLoad={()=>play()}
         />
       ) : (
-        <img src={bg} className={css.video} alt="car" />
+        <img src={window.screen.width<768?bgMobile: bg} className={css.video} alt="car" />
       )}
       <div className={css.heroWrap}>
         <img className={logoUp ? css.logoUp : css.logo} src={logo} alt="logo" />
