@@ -18,7 +18,7 @@
   .aboutTitle {
     color: white;
     font-size: 25px;
-    
+
     margin-bottom: 50px;
   }
 
@@ -103,10 +103,6 @@
   }
 }
 
-
-
-
-
 /* //----------------------------------------------------------------------TABLET----------------------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about {
@@ -128,7 +124,6 @@
     color: white;
     font-size: 50px;
     margin-bottom: 100px;
-    
   }
 
   .contacts {
@@ -176,10 +171,6 @@
     margin-left: 10px;
   }
 
-
-
-
-
   /* //---------------------------------------------------- */
 
   .aboutList {
@@ -200,7 +191,7 @@
   }
 
   .aboutItem:first-child {
-padding-left: 0;
+    padding-left: 0;
   }
   .aboutItem:nth-child(2) {
     width: 300px;
@@ -217,7 +208,6 @@ padding-left: 0;
   .aboutText {
     text-align: center;
   }
-  
 }
 /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
 @media (min-width: 1200px) {
