@@ -19,11 +19,13 @@
         rgba(67, 67, 70, 0.7),
         rgba(60, 50, 50, 1)
       ),
-      url('../../images/services/head_img.JPG');
+      url('../../images/heroBgMob.JPG');
+      background-size: cover;
   }
  
  
   .video {
+    
     position: absolute;
     top: 0;
     left: 0;
