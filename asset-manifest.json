@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/esthetic-garage_react/static/css/main.5b1dd458.css",
-    "main.js": "/esthetic-garage_react/static/js/main.0e02b9af.js",
+    "main.css": "/esthetic-garage_react/static/css/main.7603025b.css",
+    "main.js": "/esthetic-garage_react/static/js/main.a86c4314.js",
     "static/media/video_last.mp4": "/esthetic-garage_react/static/media/video_last.46e1db6f0c3bb84a4817.mp4",
     "static/media/P1040935.jpg": "/esthetic-garage_react/static/media/P1040935.69d148c7ed9789c7118f.jpg",
     "static/media/P1040906.jpg": "/esthetic-garage_react/static/media/P1040906.f3b223090783c86a73a1.jpg",
@@ -42,15 +42,16 @@
     "static/media/bg2.JPG": "/esthetic-garage_react/static/media/bg2.9ec610773960ece6f832.JPG",
     "static/media/bg9.JPG": "/esthetic-garage_react/static/media/bg9.a4dc3382dd567f47726e.JPG",
     "static/media/IMG_8517.jpg": "/esthetic-garage_react/static/media/IMG_8517.77969dd05cff83263316.jpg",
+    "static/media/heroBgMob.JPG": "/esthetic-garage_react/static/media/heroBgMob.e2647904ef096af168ba.JPG",
     "static/media/logo2.png": "/esthetic-garage_react/static/media/logo2.fb12e519ed50418240cc.png",
     "static/media/logo3.png": "/esthetic-garage_react/static/media/logo3.7669633d509a20bdc9cf.png",
     "static/media/symbol-defs.svg": "/esthetic-garage_react/static/media/symbol-defs.95ca4ca8856f1faf9d2c046438569715.svg",
     "index.html": "/esthetic-garage_react/index.html",
-    "main.5b1dd458.css.map": "/esthetic-garage_react/static/css/main.5b1dd458.css.map",
-    "main.0e02b9af.js.map": "/esthetic-garage_react/static/js/main.0e02b9af.js.map"
+    "main.7603025b.css.map": "/esthetic-garage_react/static/css/main.7603025b.css.map",
+    "main.a86c4314.js.map": "/esthetic-garage_react/static/js/main.a86c4314.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b1dd458.css",
-    "static/js/main.0e02b9af.js"
+    "static/css/main.7603025b.css",
+    "static/js/main.a86c4314.js"
   ]
 }
