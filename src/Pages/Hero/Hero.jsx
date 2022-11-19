@@ -39,8 +39,8 @@ export const Hero = () => {
     {
       id: 1,
       title: 'Захист антигравійною плівкою',
-      text: `Антигравійна плівка - сучасний, найбільш надійний захист лакофарбового (ЛФП) покриття автомобіля. 
-       Антигравійна плівка зберігає ідеальний стан лаку на десятки років. Антигравійна плівка захистить ЛФП від: 
+      text: `Антигравійна плівка - сучасний, найбільш надійний захист лакофарбового (ЛФП) покриття автомобіля, 
+       вона зберігає ідеальний стан лаку на десятки років. Антигравійна плівка захистить ЛФП від: 
     Появи сколів,
     впливу хімічних реагентів,
     появи подряпин,
@@ -102,12 +102,13 @@ export const Hero = () => {
       >
         {isVideoPlay ? (
           <video
-            src={window.screen.width < 768?videoMob:video}
+            src={window.screen.width < 1199?videoMob:video}
             ref={vidRef}
             type="video/mp4"
             className={css.video}
             muted
             loop
+            autoPlay
             onLoad={() => play()}
           ></video>
         ) : (
@@ -138,19 +139,19 @@ export const Hero = () => {
                     <motion.li
                     className={css.leftSideItem}
                       onMouseEnter={() => {
-                        if(window.screen.width < 768 ){
+                        if(window.screen.width < 1199 ){
                           return
                         }
                         setActiveText(id);
                       }}
                       onMouseLeave={() => {
-                        if(window.screen.width < 768 ){
+                        if(window.screen.width < 1199 ){
                           return
                         }
                         setActiveText(0);
                       }}
                       onClick={() => {
-                        if(window.screen.width >= 768 ){
+                        if(window.screen.width >= 1199 ){
                           return
                         }
                         if (activeText===id) {

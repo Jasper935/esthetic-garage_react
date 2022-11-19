@@ -200,13 +200,15 @@ export const Services = () => {
       <div className={css.titleWrap}>
         <h2 className={css.title}>Послуги, які ми надаємо.</h2>
       </div>
-      <ul className={css.servicesLsit}>
+      <ul className={css.servicesLsit} >
         {finalServicesList.map(
           ({ title, id, price, text, time, descrPrice, type }, i) => {
             return (
               <motion.li
+              
                 className={css.servicesItem}
                 onClick={() => {
+                  console.log('cl');
                   SetActiveElem(id);
                   onClick(id);
                 }}

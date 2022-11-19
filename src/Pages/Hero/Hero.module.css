@@ -1,15 +1,13 @@
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
     position: relative;
-    
+
     width: 100vw;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
     overflow: hidden;
     background-color: transparent;
     background-attachment: fixed;
@@ -20,25 +18,21 @@
         rgba(60, 50, 50, 0.9)
       ),
       url('../../images/heroBgMob.JPG');
-      background-size: cover;
+    background-size: cover;
   }
- 
- 
+
   .video {
-    
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    width:  100%;
     background-size: cover;
-     z-index: 1;
-    
+    z-index: 1;
+
     background-size: cover;
     width: auto;
-    
-    
   }
-  
+
   .heroWrap {
     position: relative;
     display: flex;
@@ -49,18 +43,15 @@
     z-index: 5;
   }
   .logo {
-    
     position: absolute;
     width: 70%;
     top: 50%;
-   left: 50%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
     opacity: 0.9;
-    
-   
   }
   .logoUp {
     display: none;
@@ -68,7 +59,7 @@
     width: 700px;
     top: 110px;
     right: -25px;
-    transform:  scale(0.4);
+    transform: scale(0.4);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
@@ -83,11 +74,8 @@
     left: 0;
     top: 50px;
     transform: translateY(-50%);
-    
+
     z-index: 10;
-    
-    
-    
   }
   .leftSideContent {
     width: 100%;
@@ -97,8 +85,6 @@
     align-items: center;
     justify-content: center;
     z-index: 50;
-    
-
   }
   .leftSideList {
     display: flex;
@@ -107,22 +93,18 @@
     justify-content: center;
     height: 100%;
     width: 102%;
-    background-color: rgba(83, 72, 74, 0.98);
-    
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .leftSideItem {
     position: relative;
     padding: 15px 0;
     padding-left: 40px;
-   padding-right: 50px;
+    padding-right: 50px;
     width: 100%;
     height: auto;
     transition: all 0.3s ease-in-out;
-    
-    
   }
- 
-  
+
   .arrowIcon {
     position: absolute;
     top: 50%;
@@ -137,14 +119,14 @@
     position: absolute;
     top: 50%;
     left: 15px;
-    
+
     width: 25px;
     height: 25px;
     fill: rgb(199, 37, 37);
-    transform: translateY(-50%) rotate(180deg) ;
+    transform: translateY(-50%) rotate(180deg);
     transition: all 0.4s ease-in-out;
     animation-name: hiddenText;
-  
+
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
@@ -156,9 +138,8 @@
     transition: all 0.4s ease-in-out;
     line-height: 0.9;
     margin-left: 15px;
-    
   }
-  
+
   /* //--------------------------------------------------------- */
   .rightSide {
     position: absolute;
@@ -182,19 +163,18 @@
     right: 0;
     height: 425px;
     width: 100%;
-    
-    
+
     z-index: -1;
     transition: all 0.4s ease-in-out;
     transition-delay: 150ms;
-    
-  transition: all 0.4s linear;
+
+    transition: all 0.4s linear;
     padding: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
   }
-  .rightSide_active::before{
+  .rightSide_active::before {
     content: '';
     position: absolute;
     top: 0;
@@ -203,7 +183,6 @@
     background-color: rgba(41, 39, 39, 0.9);
   }
   .hiddenContentText {
-    
     color: white;
     font-size: 13px;
     z-index: -16;
@@ -213,22 +192,21 @@
     /* transition: all 2s ease-in-out; */
   }
   .hiddenContentText_active {
-   padding-top: 15px;
+    padding-top: 15px;
     color: rgb(220, 223, 210);
     font-size: 13px;
     z-index: 3;
     font-weight: 800;
     width: 100%;
-   /* transition-delay: 50ms; */
-    
+    /* transition-delay: 50ms; */
+
     opacity: 1;
-    
   }
   /* //------------------------------------------------------------------ */
-  
-  .contacts{
+
+  .contacts {
     position: absolute;
-    bottom:-350px;
+    bottom: -350px;
     right: 0px;
     display: flex;
     /* display: none; */
@@ -237,46 +215,42 @@
     justify-content: space-between;
     z-index: 75;
     width: 100%;
-    
   }
-  
-  .telLink{
-    font-family:  monospace;
+
+  .telLink {
+    font-family: monospace;
     font-size: 18px;
-    
+
     padding: 5px 3px;
     color: white;
     font-weight: 700;
     /* width: 400px; */
-    
-   
+
     text-align: center;
     display: flex;
     align-items: center;
-    
   }
-  .telIcon{
+  .telIcon {
     width: 25px;
     height: 25px;
     fill: white;
     margin-right: 10px;
     margin-left: 10px;
   }
-  .location{
+  .location {
     /* font-family:  monospace; */
     font-size: 18px;
-    
+
     padding: 5px 10px;
     color: white;
     font-weight: 700;
     /* width: 450px; */
-    
-   
+
     text-align: center;
     display: flex;
     align-items: center;
   }
-  .locIcon{
+  .locIcon {
     width: 25px;
     height: 25px;
     fill: white;
@@ -284,23 +258,23 @@
     margin-left: 10px;
   }
   /* ------------------------------------------------------------------------------ */
-  .videoSwitcher{
-  position: absolute;
-  top: -30px; 
-  left:20px ;
-  z-index: 75;
-  display: flex;
-  display: none;
-  flex-direction: column;
-  align-items: center;
+  .videoSwitcher {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    z-index: 75;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .videoText{
+
+  .videoText {
     color: white;
     font-size: 14px;
     cursor: pointer;
   }
-  .videoBtn{
+  .videoBtn {
     width: 50px;
     height: 22px;
     background-color: #bda73e;
@@ -310,7 +284,7 @@
     border-radius: 15px;
     cursor: pointer;
   }
-  .videoBtnPoint{
+  .videoBtnPoint {
     position: absolute;
     top: 50%;
     left: 2px;
@@ -321,33 +295,40 @@
     background-color: white;
     transition: all 0.2s linear;
   }
-  .videoBtnPointRight{
+  .videoBtnPointRight {
     position: absolute;
     top: 50%;
     left: 30px;
-    transform: translateY(-50%) ;
+    transform: translateY(-50%);
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: rgb(208, 22, 22);
     transition: all 0.2s linear;
   }
-  
 }
 
 
+
+
 /* //----------------------------------------------------------------------TABLET----------------------------------------------------- */
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     position: relative;
-    
+
     width: 100vw;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
     overflow: hidden;
     background-color: transparent;
     background-attachment: fixed;
@@ -358,25 +339,21 @@
         rgba(60, 50, 50, 0.9)
       ),
       url('../../images/heroBgMob.JPG');
-      background-size: cover;
+    background-size: cover;
   }
- 
- 
+
   .video {
-    
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    width: 100%;
     background-size: cover;
-     z-index: 1;
-    
+    z-index: 1;
+
     background-size: cover;
     width: auto;
-    
-    
   }
-  
+
   .heroWrap {
     position: relative;
     display: flex;
@@ -387,18 +364,15 @@
     z-index: 5;
   }
   .logo {
-    
     position: absolute;
     width: 70%;
     top: 50%;
-   left: 50%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
     opacity: 0.9;
-    
-   
   }
   .logoUp {
     display: none;
@@ -406,7 +380,268 @@
     width: 700px;
     top: 110px;
     right: -25px;
-    transform:  scale(0.4);
+    transform: scale(0.4);
+    z-index: 50;
+    transition: all 0.4s ease-out;
+    transition-delay: 150ms;
+  }
+  .leftSide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 50px;
+    /* transform: translateY(-50%); */
+
+    z-index: 10;
+  }
+  .leftSideContent {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  .leftSideList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 50px;
+  }
+  .leftSideItem {
+    position: relative;
+    padding: 15px 0;
+    padding-left: 100px;
+    /* padding-right: 50px; */
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .leftSideItem:last-child {
+    margin-bottom: 50px;
+  }
+
+  .arrowIcon {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%) rotate(90deg);
+    width: 40px;
+    height: 40px;
+    fill: #c4be97;
+    transition: all 0.3s ease-in-out;
+  }
+  .arrowIconActive {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+
+    width: 40px;
+    height: 40px;
+    fill: rgb(199, 37, 37);
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.4s ease-in-out;
+    animation-name: hiddenText;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .leftSideTitle {
+    color: white;
+    font-size: 40px;
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.4s ease-in-out;
+    line-height: 0.9;
+    margin-left: 15px;
+  }
+
+  /* //--------------------------------------------------------- */
+  .rightSide {
+    position: absolute;
+    top: 700px;
+    right: -500px;
+    height: 425px;
+    width: 520px;
+    background-color: transparent;
+    z-index: -5;
+
+    border-radius: 0 30px 30px 0;
+    transition-delay: 150ms;
+    transition: all 0.4s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightSide_active {
+    position: absolute;
+    bottom: -48vh;
+    right: 0;
+    height: 425px;
+    width: 100%;
+
+    z-index: -1;
+
+    transition-delay: 150ms;
+
+    transition: all 0.4s linear;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .rightSide_active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 102%;
+    height: 100vh;
+    background-color: rgba(41, 39, 39, 0.9);
+  }
+  .hiddenContentText {
+    color: white;
+    font-size: 13px;
+    z-index: -16;
+    font-weight: 800;
+    opacity: 0;
+    /* transform: scale(0); */
+    /* transition: all 2s ease-in-out; */
+  }
+  .hiddenContentText_active {
+    padding-top: 15px;
+    color: rgb(220, 223, 210);
+    font-size: 17px;
+    z-index: 3;
+    font-weight: 800;
+    width: 500px;
+    text-align: center;
+
+    opacity: 1;
+  }
+  /* //------------------------------------------------------------------ */
+
+  .contacts {
+    position: absolute;
+    bottom: -60vh;
+    right: 0px;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 75;
+    width: 100%;
+  }
+
+  .telLink {
+    font-family: monospace;
+    font-size: 18px;
+
+    padding: 5px 3px;
+    color: white;
+    font-weight: 700;
+    /* width: 400px; */
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .telIcon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .location {
+    /* font-family:  monospace; */
+    font-size: 18px;
+
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+    /* width: 450px; */
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .locIcon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .videoSwitcher {
+    display: none;
+  }
+  /* ------------------------------------------------------------------------------ */
+}
+
+/* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .hero {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    overflow: hidden;
+    background-color: transparent;
+    background-attachment: fixed;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.3;
+  }
+
+  .heroWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1150px;
+    height: 100%;
+    z-index: 5;
+  }
+  .logo {
+    position: absolute;
+    width: 550px;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    z-index: 50;
+    transition: all 0.4s ease-out;
+    transition-delay: 150ms;
+    opacity: 0.7;
+  }
+  .logoUp {
+    position: absolute;
+    width: 700px;
+    top: 110px;
+    right: -25px;
+    transform: scale(0.4);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
@@ -417,26 +652,24 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 30%;
-    left: 0;
-    top: 50px;
+    height: 635px;
+    right: 57%;
+    top: 15%;
     transform: translateY(-50%);
-    
+
     z-index: 10;
-    
-    
-    
+
+    background-color: rgba(161, 141, 146, 0.7);
+    /* border-radius: 0 15px 15px 0; */
   }
   .leftSideContent {
-    width: 100%;
+    width: 500px;
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 50;
-    
-
   }
   .leftSideList {
     display: flex;
@@ -444,70 +677,66 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 102%;
-    background-color: rgba(83, 72, 74, 0.98);
-    
+    width: 100%;
   }
   .leftSideItem {
     position: relative;
-    padding: 15px 0;
-    padding-left: 40px;
-   padding-right: 50px;
+    padding: 25px 0;
+    padding-left: 75px;
+    /* width: 425px; */
     width: 100%;
-    height: auto;
     transition: all 0.3s ease-in-out;
-    
-    
   }
- 
-  
+
   .arrowIcon {
     position: absolute;
     top: 50%;
-    left: 15px;
-    transform: translateY(-50%) rotate(90deg);
-    width: 25px;
-    height: 25px;
+    left: 25px;
+    transform: translateY(-50%) rotate(180deg);
+    width: 35px;
+    height: 35px;
     fill: #c4be97;
     transition: all 0.3s ease-in-out;
   }
   .arrowIconActive {
     position: absolute;
     top: 50%;
-    left: 15px;
-    
-    width: 25px;
-    height: 25px;
+    left: 25px;
+
+    width: 35px;
+    height: 35px;
     fill: rgb(199, 37, 37);
-    transform: translateY(-50%) rotate(180deg) ;
+    transform: translateY(-50%) rotate(90deg);
     transition: all 0.4s ease-in-out;
     animation-name: hiddenText;
-  
+
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
   .leftSideTitle {
     color: white;
-    font-size: 20px;
+    font-size: 48px;
     opacity: 0.8;
     width: 425px;
     transition: all 0.4s ease-in-out;
     line-height: 0.9;
     margin-left: 15px;
-    
   }
-  
-  /* //--------------------------------------------------------- */
+  .leftSideTitle:hover {
+    cursor: pointer;
+
+    opacity: 1;
+  }
   .rightSide {
     position: absolute;
     top: 0;
-    right: -12px;
+    right: 0px;
     height: 100%;
-    width: 520px;
-    background-color: transparent;
+    width: 100%;
+    background-color: rgb(60, 50, 50);
     z-index: -5;
     transition: all 0.3s ease-in-out;
-    border-radius: 0 30px 30px 0;
+
     transition-delay: 150ms;
     transition: all 0.4s linear;
     display: flex;
@@ -516,34 +745,26 @@
   }
   .rightSide_active {
     position: absolute;
-    bottom: -425px;
-    right: 0;
-    height: 425px;
-    width: 100%;
-    
-    
+    top: 0;
+    right: -700px;
+    height: 100%;
+    width: 700px;
+
+    background-color: rgba(41, 39, 39, 1);
     z-index: -1;
     transition: all 0.4s ease-in-out;
     transition-delay: 150ms;
-    
-  transition: all 0.4s linear;
-    padding: 20px;
+    border-radius: 0 30px 30px 0;
+    transition: all 0.4s linear;
+    padding: 50px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
-  .rightSide_active::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 102%;
-    height: 100vh;
-    background-color: rgba(41, 39, 39, 0.9);
-  }
+
   .hiddenContentText {
-    
     color: white;
-    font-size: 13px;
+    font-size: 20px;
     z-index: -16;
     font-weight: 800;
     opacity: 0;
@@ -551,424 +772,138 @@
     /* transition: all 2s ease-in-out; */
   }
   .hiddenContentText_active {
-   padding-top: 15px;
+    padding-top: 65px;
     color: rgb(220, 223, 210);
-    font-size: 13px;
+    font-size: 17px;
     z-index: 3;
     font-weight: 800;
-    width: 100%;
-   /* transition-delay: 50ms; */
-    
+    /* transition-delay: 50ms; */
+
     opacity: 1;
-    
   }
   /* //------------------------------------------------------------------ */
-  
-  .contacts{
+  .contacts {
     position: absolute;
-    bottom:-350px;
-    right: 0px;
+    bottom: 15px;
+    right: -760px;
     display: flex;
-    /* display: none; */
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     z-index: 75;
-    width: 100%;
-    
   }
-  
-  .telLink{
-    font-family:  monospace;
-    font-size: 18px;
-    
+  .contacts {
+    position: absolute;
+    bottom: 15px;
+    right: -725px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 75;
+  }
+
+  .telLink {
+    font-family: monospace;
+    font-size: 20px;
+
     padding: 5px 3px;
     color: white;
     font-weight: 700;
     /* width: 400px; */
-    
-   
+
     text-align: center;
     display: flex;
     align-items: center;
-    
   }
-  .telIcon{
-    width: 25px;
-    height: 25px;
+  .telIcon {
+    width: 30px;
+    height: 30px;
     fill: white;
     margin-right: 10px;
     margin-left: 10px;
   }
-  .location{
+  .location {
     /* font-family:  monospace; */
-    font-size: 18px;
-    
+    font-size: 20px;
+
     padding: 5px 10px;
     color: white;
     font-weight: 700;
-    /* width: 450px; */
-    
-   
+    width: 450px;
+
     text-align: center;
     display: flex;
     align-items: center;
   }
-  .locIcon{
-    width: 25px;
-    height: 25px;
+  .locIcon {
+    width: 30px;
+    height: 30px;
     fill: white;
     margin-right: 10px;
     margin-left: 10px;
   }
   /* ------------------------------------------------------------------------------ */
-  
-  
-}
+  .videoSwitcher {
+    position: absolute;
+    top: 10px;
+    right: -675px;
+    z-index: 75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-
-
-  /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
-  @media (min-width: 1200px) {
-
-.hero {
-  position: relative;
-  
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  
-  overflow: hidden;
-  background-color: transparent;
-  background-attachment: fixed;
+  .videoText {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .videoBtn {
+    width: 50px;
+    height: 22px;
+    background-color: #bda73e;
+    background-color: transparent;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .videoBtnPoint {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.2s linear;
+  }
+  .videoBtnPointRight {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(208, 22, 22);
+    transition: all 0.2s linear;
+  }
+  .message {
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    padding: 15px;
+    width: 225px;
+    color: wheat;
+    border: 1px solid wheat;
+    border-radius: 15px;
+    background-color: rgba(41, 39, 39, 0.7);
+    text-align: center;
+  }
 }
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-size: cover;
-   z-index: 1;
-  opacity: 0.3;
-  
-}
-
-.heroWrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 1150px;
-  height: 100%;
-  z-index: 5;
-}
-.logo {
-  position: absolute;
-  width: 550px;
-  top: 50%;
-  right: 25px;
-  transform: translateY(-50%);
-  z-index: 50;
-  transition: all 0.4s ease-out;
-  transition-delay: 150ms;
-  opacity: 0.7;
-  
- 
-}
-.logoUp {
-  position: absolute;
-  width: 700px;
-  top: 110px;
-  right: -25px;
-  transform:  scale(0.4);
-  z-index: 50;
-  transition: all 0.4s ease-out;
-  transition-delay: 150ms;
-}
-.leftSide {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 635px;
-  right: 57%;
-  top: 15%;
-  transform: translateY(-50%);
-  
-  z-index: 10;
-  
-  background-color: rgba(161, 141, 146, 0.7);
-  /* border-radius: 0 15px 15px 0; */
-}
-.leftSideContent {
-  width: 500px;
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-.leftSideList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-.leftSideItem {
-  position: relative;
-  padding: 25px 0;
-  padding-left: 75px;
-  /* width: 425px; */
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.arrowIcon {
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  transform: translateY(-50%) rotate(180deg);
-  width: 35px;
-  height: 35px;
-  fill: #c4be97;
-  transition: all 0.3s ease-in-out;
-}
-.arrowIconActive {
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  
-  width: 35px;
-  height: 35px;
-  fill: rgb(199, 37, 37);
-  transform: translateY(-50%) rotate(90deg) ;
-  transition: all 0.4s ease-in-out;
-  animation-name: hiddenText;
-
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.leftSideTitle {
-  color: white;
-  font-size: 48px;
-  opacity: 0.8;
-  width: 425px;
-  transition: all 0.4s ease-in-out;
-  line-height: 0.9;
-  margin-left: 15px;
-  
-}
-.leftSideTitle:hover {
-  cursor: pointer;
-
-  opacity: 1;
-}
-.rightSide {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(60, 50, 50);
-  z-index: -5;
-  transition: all 0.3s ease-in-out;
-  
-  transition-delay: 150ms;
-  transition: all 0.4s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rightSide_active {
-  position: absolute;
-  top: 0;
-  right: -700px;
-  height: 100%;
-  width: 700px;
-  
-  background-color: rgba(41, 39, 39, 1);
-  z-index: -1;
-  transition: all 0.4s ease-in-out;
-  transition-delay: 150ms;
-  border-radius: 0 30px 30px 0;
-transition: all 0.4s linear;
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hiddenContentText {
-  
-  color: white;
-  font-size: 20px;
-  z-index: -16;
-  font-weight: 800;
-  opacity: 0;
-  /* transform: scale(0); */
-  /* transition: all 2s ease-in-out; */
-}
-.hiddenContentText_active {
- padding-top: 65px;
-  color: rgb(220, 223, 210);
-  font-size: 17px;
-  z-index: 3;
-  font-weight: 800;
- /* transition-delay: 50ms; */
-  
-  opacity: 1;
-  
-}
-/* //------------------------------------------------------------------ */
-.contacts{
-  position: absolute;
-  bottom:15px;
-  right: -760px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 75;
-  
-}
-.contacts{
-  position: absolute;
-  bottom:15px;
-  right: -725px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 75;
-  
-}
-
-.telLink{
-  font-family:  monospace;
-  font-size: 20px;
-  
-  padding: 5px 3px;
-  color: white;
-  font-weight: 700;
-  /* width: 400px; */
-  
- 
-  text-align: center;
-  display: flex;
-  align-items: center;
-  
-}
-.telIcon{
-  width: 30px;
-  height: 30px;
-  fill: white;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.location{
-  /* font-family:  monospace; */
-  font-size: 20px;
-  
-  padding: 5px 10px;
-  color: white;
-  font-weight: 700;
-  width: 450px;
-  
- 
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-.locIcon{
-  width: 30px;
-  height: 30px;
-  fill: white;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-/* ------------------------------------------------------------------------------ */
-.videoSwitcher{
-position: absolute;
-top: 10px; 
-right:-675px ;
-z-index: 75;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.videoText{
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-}
-.videoBtn{
-  width: 50px;
-  height: 22px;
-  background-color: #bda73e;
-  background-color: transparent;
-  border: 2px solid white;
-  position: relative;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.videoBtnPoint{
-  position: absolute;
-  top: 50%;
-  left: 2px;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-  transition: all 0.2s linear;
-}
-.videoBtnPointRight{
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%) ;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgb(208, 22, 22);
-  transition: all 0.2s linear;
-}
-.message{
-  position: absolute;
-  top: 50%;
-  right: 55px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  padding: 15px;
-  width: 225px;
-  color: wheat;
-  border: 1px solid wheat;
-  border-radius: 15px;
-  background-color: rgba(41, 39, 39, 0.7);
-  text-align: center;
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes hiddenText {
   0% {

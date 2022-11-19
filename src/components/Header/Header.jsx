@@ -63,7 +63,7 @@ export const Header = ({ text = 'Next', location, activeId }) => {
                     </li>
                   );
                 })}
-              {screenWidth<1200&&<div className={css.socailsWrap}><Socials iconStyles={{width:'35px', color: 'white' }} /></div> } 
+              {screenWidth<1199&&<div className={css.socailsWrap}><Socials iconStyles={{width:'35px', color: 'white' }} /></div> } 
               </motion.ul>
             ) : (
               screenWidth>1199&& <Socials iconStyles={{ color: '#d6c0c0' }} />
