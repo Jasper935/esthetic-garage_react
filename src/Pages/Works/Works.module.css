@@ -112,7 +112,121 @@ height: 100vh;
     rotate: 90deg;
   }
 }
+/* //----------------------------------------------------------------------TABLET----------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works {
+    position: relative;
+    width: 100vw;
+height: 100vh;
+    padding: 35px 0;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(67, 67, 70, 0.7),
+        rgba(60, 50, 50, 1)
+      ),
+      url('../../images/bg3.JPG');
+    background-size: cover;
+  }
+
+  .worksTitle {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 200px;
+   
+  }
+  .swiperWrap {
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    z-index: 5;
+    background-color: transparent;
+  }
+  .logo{
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%) 
+  }
+  .worksSocials {
+    
+    position: absolute;
+    top: -125px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 300;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px;
+    /* margin-bottom: 25px; */
+  }
+  .worksSocialsTitle {
+    color: white;
+    font-size: 18px;
+    
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ 
+  .swiper {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 100px;
+    z-index: 1;
+    
+  }
+
+  .swiperSlide {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+  }
+
+  .swiperBtnPrev {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    background-color: transparent;
+    z-index: 25;
+    cursor: pointer;
+    border: none;
+  }
+  .swiperBtnPrevIcon {
+    width: 50px;
+    height: 50px;
+    fill: #dbcccc;
+    rotate: -90deg;
+  }
+  .swiperBtnNext {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    background-color: transparent;
+    z-index: 25;
+    border: none;
+    cursor: pointer;
+  }
+  .swiperBtnNextIcon {
+    width: 50px;
+    height: 50px;
+    fill: #ded7d7;
+    rotate: 90deg;
+  }
+}
 /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
 @media (min-width: 1200px) {
     .works {

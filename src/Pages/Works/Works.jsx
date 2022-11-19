@@ -16,6 +16,8 @@ export const Works = () => {
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
   const transition = { duration: 2 };
+
+  const tablet =window.screen.width<1199&&window.screen.width>767
   return (
     <>
       <Header text="Про нас" activeId={3} location="/about" />
@@ -27,7 +29,7 @@ export const Works = () => {
       >
         <h2 className={css.worksTitle}>Виконані роботи</h2>
         <div className={css.swiperWrap}>
-          {window.screen.width<767&&<img className={css.logo} src={logo} alt="logo" />}
+          {window.screen.width<1199&&<img className={css.logo} src={logo} alt="logo" />}
           <button
             className={css.swiperBtnPrev}
             onClick={() => swiperRef.current.slidePrev()}
@@ -48,7 +50,8 @@ export const Works = () => {
             <p className={css.worksSocialsTitle}>
               Це більше фото та відео контенту в наших соціальних мережах:
             </p>
-            <Socials />
+            <Socials iconStyles={tablet&&{width:'30px'}} />
+            
           </div>
           <Swiper
             className={css.swiper}

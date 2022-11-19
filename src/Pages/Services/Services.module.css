@@ -292,7 +292,7 @@ margin-top: 100px;
     height: 0;
     margin: -1px;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-out;
   }
   .ItemHiddenOpen {
    position: relative;
@@ -301,7 +301,7 @@ margin-top: 100px;
     border-radius: 0 0 15px 15px;
     opacity: 1;
    
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-out;
     display: flex;
 
     background-image: linear-gradient(
@@ -328,7 +328,8 @@ margin-top: 100px;
     color: wheat;
     padding: 20px 25px;
     opacity: 0;
-    /* transition: all 0.5s linear; */
+    pointer-events: none;
+   
   }
   .leftTextActive {
     position: absolute;
@@ -338,7 +339,7 @@ margin-top: 100px;
     color: wheat;
     padding: 20px 25px;
     opacity: 1;
-    /* transition: all 0.5s linear; */
+   
     
   }
   .hiddenRight {

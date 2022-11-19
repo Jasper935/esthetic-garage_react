@@ -6,7 +6,7 @@ import { Header } from 'components/Header/Header';
 import { motion } from 'framer-motion';
 //--------------------------------------------------
 export const Services = () => {
-  const [activeElem, SetActiveElem] = useState(0);
+  const [activeElem, SetActiveElem] = useState(1);
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
   const transition = { duration: 1 };
@@ -208,8 +208,8 @@ export const Services = () => {
               
                 className={css.servicesItem}
                 onClick={() => {
-                  console.log('cl');
-                  SetActiveElem(id);
+                  console.log(id);
+                  // SetActiveElem(id);
                   onClick(id);
                 }}
                 initial={{ opacity: 0, x: 50 }}
