@@ -6,7 +6,7 @@
     width: 100vw;
     height: 50px;
     box-shadow: 0 0 10px 0 #585454;
-    /* overflow: hidden; */
+   
     background-color: rgba(0, 0, 0, 0.1);
   }
   .wrap {
@@ -107,14 +107,11 @@
     color: white;
     font-weight: 700;
     font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s linear;
+    white-space: nowrap;
+    
     z-index: 410;
   }
-  .nextBtn:hover {
-    color: wheat;
-    transition: all 0.3s linear;
-  }
+ 
   .nextIcon {
     margin-left: 5px;
     fill: white;
@@ -176,7 +173,6 @@
     fill: white;
     width: 40px;
     height: 40px;
-    
   }
   .navList {
     position: absolute;
@@ -333,7 +329,7 @@
     font-weight: 600;
     width: 100%;
     z-index: 305;
-
+    
     /* padding-left: 30px; */
     text-align: center;
   }
