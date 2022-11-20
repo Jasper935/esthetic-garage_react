@@ -208,8 +208,8 @@ export const Services = () => {
               
                 className={css.servicesItem}
                 onClick={() => {
-                  console.log(id);
-                  // SetActiveElem(id);
+                  // console.log(id);
+                  SetActiveElem(id);
                   onClick(id);
                 }}
                 initial={{ opacity: 0, x: 50 }}

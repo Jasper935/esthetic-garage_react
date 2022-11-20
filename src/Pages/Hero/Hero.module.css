@@ -28,7 +28,7 @@
     width:  100%;
     background-size: cover;
     z-index: 1;
-
+background-color: transparent;
     background-size: cover;
     width: auto;
   }
@@ -198,7 +198,7 @@
     z-index: 3;
     font-weight: 800;
     width: 100%;
-    /* transition-delay: 50ms; */
+    text-align: center;
 
     opacity: 1;
   }
@@ -206,7 +206,7 @@
 
   .contacts {
     position: absolute;
-    bottom: -350px;
+    bottom: -400px;
     right: 0px;
     display: flex;
     /* display: none; */
