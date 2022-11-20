@@ -113,11 +113,11 @@ export const Hero = () => {
             onLoad={() => play()}
           ></video>
         ) : (
-          <img
+          !isAppleMobile&&(<img
             src={window.screen.width < 768 ? bgMobile : bg}
             className={css.video}
             alt="car"
-          />
+          />)
         )}
         <div className={css.heroWrap}>
           <img
