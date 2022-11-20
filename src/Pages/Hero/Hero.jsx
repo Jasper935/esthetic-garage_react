@@ -134,7 +134,7 @@ export const Hero = () => {
             style={!activeText && { borderRadius: ' 0 30px 30px 0' }}
           >
             <div className={css.leftSideContent}>
-              <ul className={css.leftSideList} style={{backgroundColor:'rgba(0, 0, 0, 0.3)'}}>
+              <ul className={css.leftSideList} style={isAppleMobile?{backgroundColor:'rgba(0, 0, 0, 0.3)'}:{opacity:1}}>
                 {content.map(({ id, title }) => {
                   return (
                     <motion.li
