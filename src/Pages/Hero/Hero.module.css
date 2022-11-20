@@ -149,7 +149,7 @@ background-color: transparent;
     width: 520px;
     background-color: transparent;
     z-index: -5;
-    transition: all 0.3s ease-in-out;
+    transform: scale(0);
     border-radius: 0 30px 30px 0;
     transition-delay: 150ms;
     transition: all 0.4s linear;
@@ -163,9 +163,9 @@ background-color: transparent;
     right: 0;
     height: 425px;
     width: 100%;
-
+    transform: scale(1);
     z-index: -1;
-    transition: all 0.4s ease-in-out;
+    
     transition-delay: 150ms;
 
     transition: all 0.4s linear;
@@ -206,10 +206,10 @@ background-color: transparent;
 
   .contacts {
     position: absolute;
-    bottom: -400px;
+    bottom: -375px;
     right: 0px;
     display: flex;
-    /* display: none; */
+   
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
