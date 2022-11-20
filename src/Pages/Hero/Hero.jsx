@@ -15,9 +15,10 @@ export const Hero = () => {
   const [isVideoPlay, setIsVideoPlay] = useState(true);
 
   const vidRef = useRef(null);
-
+  const isAppleMobile =/iPhone|iPad|iPod/i.test(navigator.userAgent)
   async function play() {
-    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    if (isAppleMobile) {
+      
       return
     } else {
       if (isVideoPlay) {
@@ -100,7 +101,7 @@ export const Hero = () => {
         animate={animate}
         transition={transition}
       >
-        {isVideoPlay ? (
+        {isVideoPlay&&!isAppleMobile ? (
           <video
             src={window.screen.width < 1199?videoMob:video}
             ref={vidRef}
