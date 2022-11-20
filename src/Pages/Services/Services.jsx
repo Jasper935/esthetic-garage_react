@@ -6,7 +6,7 @@ import { Header } from 'components/Header/Header';
 import { motion } from 'framer-motion';
 //--------------------------------------------------
 export const Services = () => {
-  const [activeElem, SetActiveElem] = useState(1);
+  const [activeElem, SetActiveElem] = useState(0);
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
   const transition = { duration: 1 };
@@ -214,7 +214,7 @@ export const Services = () => {
                 }}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.2 }}
+                transition={{ duration: 0.7, delay: i *0.1  }}
                 key={id}
               >
                 <div className={css.ItemVisible}>

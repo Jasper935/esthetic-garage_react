@@ -54,15 +54,15 @@ background-color: transparent;
     opacity: 0.9;
   }
   .logoUp {
-    display: none;
     position: absolute;
-    width: 700px;
-    top: 110px;
-    right: -25px;
-    transform: scale(0.4);
+    width: 70%;
+    top: 50%;
+    left: -500px;
+    transform: translateX(-50%);
     z-index: 50;
     transition: all 0.4s ease-out;
     transition-delay: 150ms;
+    opacity: 0;
   }
   .leftSide {
     position: absolute;
@@ -143,27 +143,11 @@ background-color: transparent;
   /* //--------------------------------------------------------- */
   .rightSide {
     position: absolute;
-    top: 0;
-    right: -12px;
-    height: 100%;
-    width: 520px;
-    background-color: transparent;
-    z-index: -5;
-    transform: scale(0);
-    border-radius: 0 30px 30px 0;
-    transition-delay: 150ms;
-    transition: all 0.4s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .rightSide_active {
-    position: absolute;
     bottom: -425px;
     right: 0;
     height: 425px;
     width: 100%;
-    transform: scale(1);
+    transform: translateX(500px);
     z-index: -1;
     
     transition-delay: 150ms;
@@ -174,14 +158,32 @@ background-color: transparent;
     align-items: flex-start;
     justify-content: center;
   }
-  .rightSide_active::before {
+  .rightSide_active {
+    position: absolute;
+    bottom: -425px;
+    right: 0;
+    height: 425px;
+    width: 100%;
+    transform: translateX(0px);
+    z-index: -1;
+    
+    transition-delay: 150ms;
+
+    transition: all 0.4s linear;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(41, 39, 39, 0.7);
+  }
+  /* .rightSide_active::before {
     content: '';
     position: absolute;
     top: 0;
     width: 102%;
     height: 100vh;
-    background-color: rgba(41, 39, 39, 0.9);
-  }
+    
+  } */
   .hiddenContentText {
     color: white;
     font-size: 13px;
