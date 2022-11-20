@@ -214,7 +214,7 @@ export const Services = () => {
                 }}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, delay: i *0.1  }}
+                transition={{ duration: 0.7, delay:i<10? i *0.1 :0.2  }}
                 key={id}
               >
                 <div className={css.ItemVisible}>
