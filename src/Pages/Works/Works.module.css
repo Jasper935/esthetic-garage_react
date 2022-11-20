@@ -88,12 +88,15 @@ height: 100vh;
     z-index: 25;
     cursor: pointer;
     border: none;
+transform: rotate(-90deg);
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .swiperBtnPrevIcon {
     width: 50px;
     height: 50px;
     fill: #dbcccc;
-    rotate: -90deg;
+    
   }
   .swiperBtnNext {
     position: absolute;
@@ -104,12 +107,14 @@ height: 100vh;
     z-index: 25;
     border: none;
     cursor: pointer;
+    transform: rotate(90deg);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .swiperBtnNextIcon {
     width: 50px;
     height: 50px;
     fill: #ded7d7;
-    rotate: 90deg;
+   
   }
 }
 /* //----------------------------------------------------------------------TABLET----------------------------------------------------- */

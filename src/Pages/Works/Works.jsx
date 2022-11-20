@@ -75,7 +75,7 @@ export const Works = () => {
             {worksPhotos.map((el, i) => {
               return (
                 <SwiperSlide className={css.swiperSlide} key={i}>
-                  <img src={el} alt={'work' + i} />
+                  <img  src={el} alt={'work' + i} />
                 </SwiperSlide>
               );
             })}
