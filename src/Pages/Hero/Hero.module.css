@@ -93,7 +93,7 @@ background-color: transparent;
     justify-content: center;
     height: 100%;
     width: 102%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 50px 0;
     padding-top: 150px;
   }
@@ -418,7 +418,7 @@ background-color: transparent;
     justify-content: flex-end;
     height: 50vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.3);
     margin-top: 50px;
   }
   .leftSideItem {

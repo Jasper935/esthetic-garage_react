@@ -98,7 +98,7 @@ export const Hero = () => {
         animate={animate}
         transition={transition}
       >
-        {isVideoPlay && window.screen.width < 1199? (
+        {window.screen.width > 1199&&(isVideoPlay  ? (
           <video
             src={window.screen.width < 1199 ? videoMob : video}
             ref={vidRef}
@@ -117,7 +117,7 @@ export const Hero = () => {
               alt="car"
             />
           )
-        )}
+        ))}
         <div className={css.heroWrap}>
           <img
             className={activeText ? css.logoUp : css.logo}
@@ -135,11 +135,7 @@ export const Hero = () => {
             <div className={css.leftSideContent}>
               <ul
                 className={css.leftSideList}
-                style={
-                  isAppleMobile
-                    ? { backgroundColor: 'rgba(0, 0, 0, 0.3)' }
-                    : { opacity: 1 }
-                }
+                
               >
                 {content.map(({ id, title }) => {
                   return (
