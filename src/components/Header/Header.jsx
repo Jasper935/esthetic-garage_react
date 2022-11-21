@@ -16,7 +16,7 @@ export const Header = ({ text = 'Next', location, activeId }) => {
   const navigate = useNavigate();
  const screenWidth =window.screen.width
   const content = [
-    { title: 'Домашня', link: '/esthetic-garage_react' },
+    { title: 'Головна', link: '/esthetic-garage_react' },
     { title: 'Послуги', link: '/services' },
     { title: 'Роботи', link: '/works' },
     { title: 'Про нас', link: '/about' },

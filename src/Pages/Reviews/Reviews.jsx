@@ -92,7 +92,7 @@ setTimeout(() => {
 
   return (
     <>
-<Header text='Домашня' activeId={5} location='/esthetic-garage_react'/>
+<Header text='Головна' activeId={5} location='/esthetic-garage_react'/>
       <section className={css.reviews}>
         <h2 className={css.reviewsTitle}>
           Напишіть свій відгук, або дивіться вже існуючі

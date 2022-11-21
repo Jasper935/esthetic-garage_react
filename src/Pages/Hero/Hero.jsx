@@ -10,22 +10,19 @@ import { Header } from 'components/Header/Header';
 import bg from '../../images/bg9.JPG';
 import bgMobile from '../../images/heroBgMob.JPG';
 export const Hero = () => {
-  
   const [activeText, setActiveText] = useState(0);
   const [isVideoPlay, setIsVideoPlay] = useState(true);
 
   const vidRef = useRef(null);
-  const isAppleMobile =/iPhone|iPad|iPod/i.test(navigator.userAgent)
+  const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   async function play() {
     if (isAppleMobile) {
-      
-      return
+      return;
     } else {
       if (isVideoPlay) {
         await vidRef.current.play();
       }
-  }
-    
+    }
   }
   const inital = { opacity: 0 };
   const animate = { opacity: 1 };
@@ -60,35 +57,35 @@ export const Hero = () => {
     {
       id: 2,
       title: 'Детейлінг очистка салону',
-      text: `Нанокерамічний захист лакофарбового покриття - найкращий спосіб підкреслити красивий дизайн автомобіля!
-       Це про естетику геометричних форм кузова. Оброблений автомобіль комфортний в догляді,
-        адже завдяки властивостям покриття чистота кузова зберігається в рази довше. Захищений автомобіль - це:
-    неймовірний блиск,
-    крутий перелив на світлі, дзеркальна та ідеально гладка поверхня ЛФП,
-    сильний гідрофобний та антистатичний ефекти,
-    якісний захист від хімічних реагентів,
-    захист від ушкодження бітумом,
-    насичений колір, 
-    захист від вигорання на сонці.
-    Виконуємо захист нанокерамікою від італійського бренду Labocosmetica. Ефекти зберігається до 2 років і довше.`,
-    },
-    {
-      id: 3,
-      title: 'Полірування кузова',
       text: `В чистому салоні поїздки значно приємніші! А в нашої команди є свої стандарти щодо чистоти салону. Послуга детейлінг очистка салону включає мийку авто ззовні, ретельну чистку дисків, дверних завіс,
       проємів та ущільнювачів. Салон майстри очистять з увагою до кожного забруднення, гіпоалергенною хімією від бренду KochChemie.
        Віддамо сухий автомобіль за будь-якої погоди, адже маємо спеціалізоване обладнання для осушування текстилю. Після очистки виконаємо озонування
         (антибактеріальна обробка) за бажання клієна в подарунок.`,
     },
     {
-      id: 4,
-      title: 'Захист нанокерамікою',
+      id: 3,
+      title: 'Полірування кузова',
       text: `З часом лакофарбове покриття автомобіля втрачає привабливий вигляд, з'являються глибокі подряпини, голограма від мийки,
       металічні вкраплення та інше. Лак втрачає колір від впливу ультрафіолетового випромінення.
        Вирішення є - полірування кузова. Перед поліруванням авто обов'язково готується на мийці (видаляємо металічні вкраплення та бітум,
           ретельно очищуємо всі зазори від нальоту та бруду). Майстри студії безпечно полірують, контролюючи товщину лаку, та з увагою до кожного глянцевого елементу.
            Використання ексцентрикових полірувальних машин, паст та падів різної абразивності дозволяє отримати максимальний блиск без голограм.
             Після полірування уважно очищуємо кузов від залишків паст.`,
+    },
+    {
+      id: 4,
+      title: 'Захист нанокерамікою',
+      text: `Нанокерамічний захист лакофарбового покриття - найкращий спосіб підкреслити красивий дизайн автомобіля!
+            Це про естетику геометричних форм кузова. Оброблений автомобіль комфортний в догляді,
+             адже завдяки властивостям покриття чистота кузова зберігається в рази довше. Захищений автомобіль - це:
+         неймовірний блиск,
+         крутий перелив на світлі, дзеркальна та ідеально гладка поверхня ЛФП,
+         сильний гідрофобний та антистатичний ефекти,
+         якісний захист від хімічних реагентів,
+         захист від ушкодження бітумом,
+         насичений колір, 
+         захист від вигорання на сонці.
+         Виконуємо захист нанокерамікою від італійського бренду Labocosmetica. Ефекти зберігається до 2 років і довше.`,
     },
   ];
 
@@ -101,9 +98,9 @@ export const Hero = () => {
         animate={animate}
         transition={transition}
       >
-        {isVideoPlay&&!isAppleMobile ? (
+        {isVideoPlay && window.screen.width < 1199? (
           <video
-            src={window.screen.width < 1199?videoMob:video}
+            src={window.screen.width < 1199 ? videoMob : video}
             ref={vidRef}
             type="video/mp4"
             className={css.video}
@@ -113,11 +110,13 @@ export const Hero = () => {
             onLoad={() => play()}
           ></video>
         ) : (
-          !isAppleMobile&&(<img
-            src={window.screen.width < 768 ? bgMobile : bg}
-            className={css.video}
-            alt="car"
-          />)
+          !isAppleMobile && (
+            <img
+              src={window.screen.width < 768 ? bgMobile : bg}
+              className={css.video}
+              alt="car"
+            />
+          )
         )}
         <div className={css.heroWrap}>
           <img
@@ -134,36 +133,40 @@ export const Hero = () => {
             style={!activeText && { borderRadius: ' 0 30px 30px 0' }}
           >
             <div className={css.leftSideContent}>
-              <ul className={css.leftSideList} style={isAppleMobile?{backgroundColor:'rgba(0, 0, 0, 0.3)'}:{opacity:1}}>
+              <ul
+                className={css.leftSideList}
+                style={
+                  isAppleMobile
+                    ? { backgroundColor: 'rgba(0, 0, 0, 0.3)' }
+                    : { opacity: 1 }
+                }
+              >
                 {content.map(({ id, title }) => {
                   return (
                     <motion.li
-                    className={css.leftSideItem}
+                      className={css.leftSideItem}
                       onMouseEnter={() => {
-                        if(window.screen.width < 1199 ){
-                          return
+                        if (window.screen.width < 1199) {
+                          return;
                         }
                         setActiveText(id);
                       }}
                       onMouseLeave={() => {
-                        if(window.screen.width < 1199 ){
-                          return
+                        if (window.screen.width < 1199) {
+                          return;
                         }
                         setActiveText(0);
                       }}
                       onClick={() => {
-                        if(window.screen.width >= 1199 ){
-                          return
+                        if (window.screen.width >= 1199) {
+                          return;
                         }
-                        if (activeText===id) {
-                          setActiveText(0)
-                          
-                        } else{
+                        if (activeText === id) {
+                          setActiveText(0);
+                        } else {
                           setActiveText(id);
                         }
-                        
                       }}
-                      
                       key={id}
                     >
                       <svg
@@ -183,11 +186,9 @@ export const Hero = () => {
               <div
                 className={activeText ? css.rightSide_active : css.rightSide}
                 onMouseEnter={() => {
-                  
                   setActiveText(activeText);
                 }}
                 onMouseLeave={() => {
-                 
                   setActiveText(0);
                 }}
               >
@@ -206,7 +207,14 @@ export const Hero = () => {
                 </motion.p>
               </div>
             </div>
-            <div className={css.contacts} style={window.screen.width < 768&&activeText?{display:'none'}:{}}>
+            <div
+              className={css.contacts}
+              style={
+                window.screen.width < 768 && activeText
+                  ? { display: 'none' }
+                  : {}
+              }
+            >
               <a className={css.telLink} href="tel:+380950147888">
                 <svg className={css.telIcon}>
                   <use href={`${svg}#icon-tel`} />
@@ -239,7 +247,6 @@ export const Hero = () => {
                   }
                 ></div>
               </div>
-              
             </div>
           </motion.div>
         </div>
