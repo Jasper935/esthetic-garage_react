@@ -349,7 +349,7 @@
     position: absolute;
     top: 50%;
     right: 10px;
-    width: 50%;
+    
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
