@@ -48,7 +48,7 @@ export const Works = () => {
           </button>
           <div className={css.worksSocials}>
             <p className={css.worksSocialsTitle}>
-              Це більше фото та відео контенту в наших соціальних мережах:
+              Ще більше фото та відео контенту в наших соціальних мережах:
             </p>
             <Socials iconStyles={tablet&&{width:'30px'}} />
             

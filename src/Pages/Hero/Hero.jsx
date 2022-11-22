@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import css from './Hero.module.css';
 import video from '../../video/video_last.mp4';
-import videoMob from '../../video/IMG_4317.mp4';
+
 import logo from '../../images/logo3.png';
 import svg from '../../images/symbol-defs.svg';
 import { motion } from 'framer-motion';
@@ -98,26 +98,25 @@ export const Hero = () => {
         animate={animate}
         transition={transition}
       >
-        {window.screen.width > 1199&&(isVideoPlay  ? (
-          <video
-            src={window.screen.width < 1199 ? videoMob : video}
-            ref={vidRef}
-            type="video/mp4"
-            className={css.video}
-            muted
-            loop
-            autoPlay
-            onLoad={() => play()}
-          ></video>
-        ) : (
-          !isAppleMobile && (
+        {window.screen.width > 1199 &&
+          (isVideoPlay ? (
+            <video
+              src={video}
+              ref={vidRef}
+              type="video/mp4"
+              className={css.video}
+              muted
+              loop
+              autoPlay
+              onLoad={() => play()}
+            ></video>
+          ) : (
             <img
               src={window.screen.width < 768 ? bgMobile : bg}
               className={css.video}
               alt="car"
             />
-          )
-        ))}
+          ))}
         <div className={css.heroWrap}>
           <img
             className={activeText ? css.logoUp : css.logo}
@@ -127,16 +126,16 @@ export const Hero = () => {
 
           <motion.div
             className={css.leftSide}
-            initial={{ x: '-100%' }}
-            animate={{ x: '0' }}
+            initial={{
+              x: '-100%',
+              y: window.screen.width > 1199 ? '-50%' : '0',
+            }}
+            animate={{ x: '0', y: window.screen.width > 1199 ? '-50%' : '0' }}
             transition={{ delay: 0.2, duration: 1 }}
             style={!activeText && { borderRadius: ' 0 30px 30px 0' }}
           >
             <div className={css.leftSideContent}>
-              <ul
-                className={css.leftSideList}
-                
-              >
+              <ul className={css.leftSideList}>
                 {content.map(({ id, title }) => {
                   return (
                     <motion.li
@@ -154,7 +153,7 @@ export const Hero = () => {
                         setActiveText(0);
                       }}
                       onClick={() => {
-                        if (window.screen.width >= 1199) {
+                        if (window.screen.width > 1199) {
                           return;
                         }
                         if (activeText === id) {
@@ -188,6 +187,13 @@ export const Hero = () => {
                   setActiveText(0);
                 }}
               >
+               {window.screen.width > 1199&&(<img
+                  className={
+                    activeText ? css.logoNeartextActive : css.logoNeartext
+                  }
+                  src={logo}
+                  alt="logo"
+                />)} 
                 <motion.p
                   key={activeText}
                   className={

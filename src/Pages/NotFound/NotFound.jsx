@@ -10,7 +10,7 @@ export const NotFound =()=>{
             <h2 className={css.title}>
                 Такої сторінки не існує
             </h2>
-            <button className={css.btn} onClick={()=>navigate('/esthetic-garage_react')}> Повернутися на головну ↑</button>
+            <button className={css.btn} onClick={()=>navigate('/')}> Повернутися на головну ↑</button>
         </div>
     )
 }
