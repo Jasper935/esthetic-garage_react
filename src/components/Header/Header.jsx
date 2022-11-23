@@ -47,10 +47,10 @@ export const Header = ({ text = 'Next', location, activeId }) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               onClick={() => {
-                 if(window.screen.width >= 1200){
-                  return
+                 if(window.screen.width < 1200){
+                  setIsOpen(false)
                  }
-                 setIsOpen(false)
+                 
               }}
             >
               {contentWitchId.map(({ id, title, link }) => {
@@ -59,7 +59,7 @@ export const Header = ({ text = 'Next', location, activeId }) => {
                     className={css.navItem}
                     key={id}
                     onClick={() => {
-                      setIsOpen(false);
+                      // setIsOpen(false);
                       navigate(link, { replace: false });
                     }}
                   >
